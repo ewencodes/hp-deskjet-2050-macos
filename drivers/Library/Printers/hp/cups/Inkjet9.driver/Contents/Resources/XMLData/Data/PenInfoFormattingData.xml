@@ -1,0 +1,458 @@
+<?xml version="1.0"?>
+<templates-container xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.hp.com/schemas/imaging/con/supply-levels-formatting-template/2010/08/16/&#10;      ../Schemas/formatting-template.xsd"><pen-info-formatting-template><constants name="TemplateConstants"><constant name="kPIFTSupplyPlatformTIJ2XGen1">1</constant><constant name="kPIFTSupplyPlatformTIJ2XGen2">2</constant><constant name="kPIFTSupplyPlatformTIJ2XGen3">3</constant><constant name="kPIFTSupplyPlatformTIJ40">4</constant><constant name="kPIFTSupplyPlatformTIJ4X">5</constant><constant name="kPIFTSupplyPlatformDesignjet">6</constant><constant name="kPIFTSupplyPlatformLaserjet">7</constant><constant name="kPIFTSupplyLOILevel">20</constant><constant name="kPIFTSupplyVLOILevel">10</constant><constant name="kPIFTSupplyOOILevel">0</constant><constant name="kPIFTSupplyMinimalLevel">20</constant><constant name="kPIFTSupplyDivisionsCount">10</constant><constant name="kPIFTSupplyStateMissingMask">0x00004000</constant><constant name="kPIFTBadSupplyStatesMask">0x2E1F6700</constant><constant name="kPIFTSupplyStateExpiredMask">0x00400000</constant><constant name="kPIFTSupplyStateOutConditionMask">0x00001000</constant><constant name="kPIFTExpiredDependencyStatesMask">0x20002000</constant><constant name="kPIFTSupplyStateSharedAddressErrorMask">0x10000000</constant><constant name="kPIFTSupplySubstatePreviouslyUsedCartridgeInstalled">13</constant><constant name="kPIFTSupplySubstateAntiTheftEnabledSupply">30</constant><constant name="kPIFTBadSupplySubStates">
+				_Dictionary(
+					 5,		"kSupplySubstateWrongHost",
+					 6,		"kSupplySubstateWrongRegion",
+					 7,		"kSupplySubstateWrongSlot",
+					12,		"kSupplySubstateNonHPSupplyOut",
+					17,		"kSupplySubstateEmptyCartridgeInstalled",
+					18,		"kSupplySubstateLOIDFailedEmptyCartridgeInstalled",
+					29,		"kSupplySubstateWrongTrade",
+					30,		"kSupplySubstateAntiTheftEnabledSupply",
+					32,		"kSupplySubstateUpgradeFailed",
+					34,		"kSupplySubstateForwardIncompatible",
+					35,		"kSupplySubstateCartridgeRefilled",
+					36,		"kSupplySubstateCartridgeCounterfeit",
+					37,		"kSupplySubstateCartridgeCounterfeitQuestion",
+					42,		"kSupplySubstateSHAIDElectricalFailure",
+					43,		"kSupplySubstateSHAIDCalibrationCounterFailure",
+					44,		"kSupplySubstateSEHOAtInsertion",
+					45,		"kSupplySubstateOOBESecureUpgradeFailed",
+					65,		"kSupplySubstateSafeStopMode"
+				)
+			</constant><constant name="kPIFTSupplyColors">
+				_Dictionary(
+					"#000000",					"black",
+					"#0000ff",					"blue",
+					"#00ffff",					"cyan",
+					"#555555",					"dark-gray",
+					"#b3007f",					"dark-magenta",
+					"#ffffff",					"glossenhancer",
+					"#7f7f7f",					"gray",
+					"#00ff00",					"green",
+					"#aaffff",					"light-cyan",
+					"#aaaaaa",					"light-gray",
+					"#ffaaff",					"light-magenta",
+					"#ffffaa",					"light-yellow",
+					"#ff00ff",					"magenta",
+					"#000000",					"matte-black",
+					"#00ffff#ff00ff#555555","black-cyan-magenta",
+					"#555555",					"photo-black",
+					"#00ffff#0000ff#ff00ff","blue-photo",
+					"#f0f0f0#7f7f7f#555555","photo-gray",
+					"#ff0000",					"red",
+					"#c0ced3",					"silver",
+					"#ffffff",					"transparent",
+					"#00ffff#ff00ff#ffff00","tri-color",
+					"#c67fc6",					"violet",
+					"#ffffff",					"white",
+					"#ffff00",					"yellow",
+					"#ffff99",					"bright-yellow",
+					"#C900CC",					"flourescent-pink",
+					"#E4EB1B",					"flourescent-yellow",
+					"#000000",					"glossy-black",
+					"#008080",					"medium-cyan",
+					"#5F5F5F",					"medium-gray",
+					"#ff7f00",					"orange",
+					"#0090FF",					"reflex-blue",
+					"#D11576",					"rhodamine-red",
+					"#000000",					"imagingdrumhpcea",
+					"#7f7f7f",					"image-fuser-kit",
+					"#7f7f7f",					"image-transfer-kit",
+					"#7f7f7f",					"maintenancekit",
+					"#ff00ff",					"blueprintmagenta",
+					"#00ffff",					"blueprintcyan"
+					)
+			</constant><constant name="kPIFTSupplyColorsNames">
+				_Dictionary(
+					"black",						"black",
+					"blue",						"blue",
+					"cyan",						"cyan",
+					"dark-gray",				"darkgray",
+					"dark-magenta",			"darkmagenta",
+					"glossenhancer",			"glossenhancer",
+					"gray",						"gray",
+					"green",						"green",
+					"light-cyan",				"lightcyan",
+					"light-gray",				"lightgray",
+					"light-magenta",			"lightmagenta",
+					"light-yellow",			"lightyellow",
+					"magenta",					"magenta",
+					"matte-black",				"matteblack",
+					"matte-black",				"mattek",
+					"black",						"k",
+					"black-cyan-magenta",	"photo",
+					"photo-black",				"blackphoto",
+					"photo-black",				"photoblack",
+					"photo-black",				"photok",
+					"blue-photo",				"photoblue",
+					"blue-photo",				"bluephoto",
+					"photo-gray",				"photogray",
+					"photo-gray",				"grayphoto",
+					"red",						"red",
+					"silver",					"silver",
+					"transparent",				"transparent",
+					"tri-color",				"tricolor",
+					"violet",					"violet",
+					"white",						"white",
+					"yellow",					"yellow",
+					"black",						"toner",
+					"bright-yellow",			"brightyellow",
+					"fluorescent-pink",		"flourescentpink",
+					"fluorescent-yellow",	"flourescentyellow",
+					"glossy-black",			"glossyblack",
+					"medium-cyan",				"mediumcyan",
+					"medium-gray",				"mediumgray",
+					"orange",					"orange",
+					"reflex-blue",				"reflexblue",
+					"rhodamine-red",			"rhodaminered",
+					"imagingdrumhpcea",		"imagingdrum",
+					"image-fuser-kit",		"fuserkit",
+					"image-transfer-kit",	"transferkit",
+					"maintenancekit",			"maintenancekit",
+					"unknown-cartridge",		"unknown",
+					"blueprintmagenta",		"blueprintmagenta",
+					"blueprintcyan",			"blueprintcyan"
+				)
+			</constant><constant name="kPIFTDMFSupplyNamesOrder">
+				_Array()
+			</constant><constant name="kPIFTSupplyStateLowConditionMask">0x00000800</constant><constant name="kPIFTSupplyStateVeryLowConditionMask">0x40000000</constant><constant name="kPIFTSupplyStateOutConditionMask">0x00001000</constant><constant name="kPIFTLOISupplyAdditionalInfo">
+				_Array(
+					0,
+					6,
+					12,
+					20,
+					22
+				)
+			</constant><constant name="kPIFTVLOISupplyAdditionalInfo">
+				_Array(
+					2,
+					8,
+					14
+				)
+			</constant><constant name="kPIFTOOISupplyAdditionalInfo">
+				_Array(
+					4,
+					10,
+					16,
+					18
+				)
+			</constant><constant name="kPIFTDMFSupplyMarkerTypes">
+				_Dictionary(
+					"toner",					3,
+					"wasteToner",			4,
+					"ink",					5,
+					"ink",					6,
+					"ink",					7,
+					"wasteInk",				8,
+					"opc",					9,
+					"developer",			10,
+					"fuserOil",				11,
+					"solidWax",				12,
+					"solidWax ",			13,
+					"wasteWax",				14,
+					"fuser",					15,
+					"fuserOil",				17,
+					"fuserCleaningPad",	19,
+					"transferUnit",		20,
+					"toner",					21,
+					"fuserOil",				22,
+					"staples",				32,
+					"fuser",					35,
+					"fuserCleaningPad",	36,
+					"transferUnit",		37,
+					"maintenancekit",		39,
+                    "inkTank", 40
+				)
+			</constant><constant name="kPIFTSupportedSupplyTypes">
+				_Array(
+					5,
+					6
+				)
+			</constant><constant name="kPIFTPoseidonSupportedSupplyTypes">
+                _Array(
+                40
+                )
+            </constant><constant name="kPIFTSuppressedSupplyColorNames">
+				_Array(
+					"silver"
+				)
+			</constant><constant name="kPIFTDeviceTurnedOffStates">
+				_Array(
+					3,
+					19
+				)
+			</constant><constant name="kPIFTSupplyErrorSubStates">
+				_Dictionary(
+					"wrongHost",		5,
+					"wrongRegion",		6,
+					"wrongSlot",  		7
+				)
+			</constant><constant name="kPIFTSupplyErrorStates">
+				_Dictionary(
+					"unknown",					0x00080000,
+					"missing",					0x00004000,
+					"failure",					0x04000000,
+					"incorrectlyInstalled",	0x08000000,
+					"incorrect",				0x00002000,
+					"incompatible",			0x20000000
+				)
+			</constant><constant name="kPIFTSupplyErrorDescriptionPriority">
+				_Array(
+					"unknown",
+					"failure",
+					"incompatible",
+					"incorrect",
+					"incorrectlyInstalled",
+					"wrongHost",
+					"wrongRegion",
+					"wrongSlot",
+					"missing"
+					)
+			</constant><constant name="kPIFTInterpretOOIStateAsExpired">@false</constant></constants><macroses name="TemplateMacroses"><macros name="PIFTSupplyMinimalLevel">
+				$kPIFTSupplyMinimalLevel
+			</macros><macros name="PIFTBadSupply">
+				(
+					($kPIFTSuppressedSupplyColorNames _Contains(_PIFTCUPSMarkerName()))
+				or
+					(
+						(($kPIFTSupplyStateExpiredMask bitand {supply}[].state) eq 0)
+						and
+						(($kPIFTBadSupplyStatesMask bitand {supply}[].state) ne 0)
+					)
+				or
+					(
+						$kPIFTInterpretOOIStateAsExpired
+						and
+						({supply}[].state bitand $kPIFTSupplyStateOutConditionMask ne 0 )
+					)
+				or
+					(
+						(($kPIFTSupplyStateExpiredMask bitand {supply}[].state) ne 0)
+						and
+						((($kPIFTBadSupplyStatesMask bitxor $kPIFTExpiredDependencyStatesMask)
+									bitand {supply}[].state) ne 0)
+					)
+				or ({supply}[].level lt 0)
+				or ({supply}[].level eq @nil)
+				or (_GetSize($kPIFTBadSupplySubStates _Intersect({supply}[].substate)) ne 0)
+				or (
+						{supply}[].substate _Contains($kPIFTSupplySubstatePreviouslyUsedCartridgeInstalled)
+						and
+						( [pift-supply-platform] eq $kPIFTSupplyPlatformTIJ2XGen2 )
+					)
+				or
+					(
+						(($kPIFTSupplyStateSharedAddressErrorMask bitand {supply}[].state) ne 0)
+						and
+						( [pift-supply-platform] eq $kPIFTSupplyPlatformTIJ2XGen3 )
+					)
+				)
+			</macros><macros name="PIFTDMFColorName">
+				(
+					({supply}[].color ne @nil)
+						then {supply}[].color
+					else {supply}[].expectedColor
+						or "unknown"
+				)
+			</macros><macros name="PIFTCUPSMarkerName">
+				$kPIFTSupplyColorsNames _GetItem(_External("SupplyColorName", _PIFTDMFColorName()), "")
+			</macros><macros name="PIFTShouldReportLOILevel">
+				(
+					( {supply}[].state bitand $kPIFTSupplyStateLowConditionMask ne 0 )
+					or
+					(
+						([pift-supply-platform] ne $kPIFTSupplyPlatformTIJ40)
+						and
+						([pift-supply-platform] ne $kPIFTSupplyPlatformDesignjet)
+						and
+						(
+							( {supply}[].state bitand $kPIFTSupplyStateVeryLowConditionMask ne 0 )
+							or
+							(
+								not $kPIFTInterpretOOIStateAsExpired
+								and
+								({supply}[].state bitand $kPIFTSupplyStateOutConditionMask ne 0 )
+							)
+						)
+					)
+					or
+					( _GetSize($kPIFTLOISupplyAdditionalInfo _Intersect({supply}[].additionalInkLevelInfo))	ne 0)
+					or
+					(
+						(
+							( _GetSize($kPIFTVLOISupplyAdditionalInfo _Intersect({supply}[].additionalInkLevelInfo)) ne 0)
+							or
+							( _GetSize($kPIFTOOISupplyAdditionalInfo _Intersect({supply}[].additionalInkLevelInfo))	ne 0)
+						)
+						and
+						([pift-supply-platform] ne $kPIFTSupplyPlatformTIJ40)
+						and
+						([pift-supply-platform] ne $kPIFTSupplyPlatformDesignjet)
+						and
+						([pift-supply-platform] ne $kPIFTSupplyPlatformTIJ2XGen3)
+					)
+				)
+			</macros><macros name="PIFTShouldReportVLOILevel">
+				(
+					(
+						(
+							( [pift-supply-platform] eq $kPIFTSupplyPlatformTIJ40 )
+							or
+							( [pift-supply-platform] eq $kPIFTSupplyPlatformDesignjet )
+						)
+						and
+						(
+							( {supply}[].state bitand $kPIFTSupplyStateVeryLowConditionMask ne 0 )
+							or
+							( _GetSize($kPIFTVLOISupplyAdditionalInfo _Intersect({supply}[].additionalInkLevelInfo)) ne 0)
+						)
+					)
+					or
+					(
+						( [pift-supply-platform] eq $kPIFTSupplyPlatformTIJ2XGen3 )
+						and
+						(
+							( _GetSize($kPIFTVLOISupplyAdditionalInfo _Intersect({supply}[].additionalInkLevelInfo)) ne 0)
+							or
+							( _GetSize($kPIFTOOISupplyAdditionalInfo _Intersect({supply}[].additionalInkLevelInfo))	ne 0)
+						)
+					)
+				)
+			</macros><macros name="PIFTShouldReportOOILevel">
+				(
+					(
+						( [pift-supply-platform] eq $kPIFTSupplyPlatformTIJ40 )
+						or
+						( [pift-supply-platform] eq $kPIFTSupplyPlatformDesignjet )
+					)
+					and
+					(
+						(
+							not $kPIFTInterpretOOIStateAsExpired
+							and
+							({supply}[].state bitand $kPIFTSupplyStateOutConditionMask ne 0 )
+						)
+						or
+						( _GetSize($kPIFTOOISupplyAdditionalInfo _Intersect({supply}[].additionalInkLevelInfo))	ne 0)
+					)
+				)
+			</macros><macros name="PIFTSupplyDivisionsCount">
+				$kPIFTSupplyDivisionsCount
+			</macros><macros name="PIFTSupplyErrorStateStrings">
+				_Translate( {supply}[].state, $kPIFTSupplyErrorStates)
+			</macros><macros name="PIFTSupplyErrorStateStringsShouldBeFiltered">
+				({supply}[].state bitand $kPIFTSupplyStateExpiredMask ne 0)
+				or
+				({supply}[].substate _Contains($kPIFTSupplySubstateAntiTheftEnabledSupply))
+			</macros><macros name="PIFTSupplyErrorStateStringsFiltered">
+				_Exclude(_PIFTSupplyErrorStateStrings(),
+				_Array() +
+				(
+					({supply}[].state bitand $kPIFTSupplyStateExpiredMask ne 0)
+					then 
+						_Array("incorrect", "incompatible")
+					else
+						@nil
+				) +
+				(
+					({supply}[].substate _Contains($kPIFTSupplySubstateAntiTheftEnabledSupply))
+					then
+						"failure"
+					else
+						@nil
+				))
+			</macros><macros name="PIFTSupplyErrorSubstateStrings">
+				_Translate({supply}[].substate, $kPIFTSupplyErrorSubStates)
+			</macros><macros name="PIFTSupplyErrorStrings">
+				_Union(
+				((_PIFTSupplyErrorStateStringsShouldBeFiltered())
+				then
+					_PIFTSupplyErrorStateStringsFiltered()
+				else
+					_PIFTSupplyErrorStateStrings()),
+				_PIFTSupplyErrorSubstateStrings())
+			</macros><macros name="PIFTSupplyErrorDescriptionStringsWithPriorities">
+				_Aggregate(_PIFTSupplyErrorStrings(), @initial + (@element, _GetKey($kPIFTSupplyErrorDescriptionPriority, @element)), _Dictionary())
+			</macros><macros name="PIFTSupplyErrorPrioritizedDescriptionIndex">
+				(_PIFTSupplyErrorDescriptionStringsWithPriorities() ne @nil and _GetSize(_PIFTSupplyErrorDescriptionStringsWithPriorities()) ne 0)
+				then 
+					_MaxValue(_AllKeys(_PIFTSupplyErrorDescriptionStringsWithPriorities()))
+				else @nil
+			</macros><macros name="PIFTSupplyErrorDescription">
+				(_PIFTSupplyErrorPrioritizedDescriptionIndex() ne @nil)
+				then
+					_GetItem($kPIFTSupplyErrorDescriptionPriority, _PIFTSupplyErrorPrioritizedDescriptionIndex())
+				else @nil
+			</macros><macros name="PIFTSupplyIconShape">
+				_CallMethod( {supply}[].supplyIconInfo, "shape")
+			</macros><macros name="PIFTSupplyIconRotation">
+				_CallMethod( {supply}[].supplyIconInfo, "rotationDegreesClockwise")
+			</macros><macros name="PIFTSupplyIconFillColorRGBComponents">
+				_CallMethod( {supply}[].supplyIconInfo, "fillColorRGBComponents")
+			</macros><macros name="PIFTSupplyIconOutlineColorRGBComponents">
+				_CallMethod( {supply}[].supplyIconInfo, "outlineColorRGBComponents")
+			</macros><macros name="PIFTSupplyIconBackgroundColorRGBComponents">
+				_CallMethod( {supply}[].supplyIconInfo, "backgroundColorRGBComponents")
+			</macros><macros name="PIFTSupplyIconLabelColorRGBComponents">
+				_CallMethod( {supply}[].supplyIconInfo, "labelColorRGBComponents")
+			</macros><macros name="PIFTSupplyIconLabel">
+				_CallMethod( {supply}[].supplyIconInfo, "label")
+			</macros></macroses><values name="TemplateValues"><value name="pen-supplies-info"><data name="Value">
+					not [pift-printer-is-turned-off]
+						then [pift-pen-supplies-info]
+					else @nil
+				</data></value><value name="pift-supplies-range-not-sorted" ServiceName="DMFSuppliesStatus"><data name="Value">{suppliesIdentifiers} _Filter(
+					$kPIFTSupportedSupplyTypes _Contains({supply}[].type)
+					and (_PIFTDMFColorName() ne @nil)
+					and (_PIFTCUPSMarkerName() ne @nil)
+				)
+				</data></value><value name="pift-supplies-range" ServiceName="DMFSuppliesStatus"><data name="Value">[pift-supplies-range-not-sorted] _Sort(
+					$kPIFTDMFSupplyNamesOrder _GetKey(_PIFTDMFColorName()))
+				</data></value><value name="pift-supply-platform" ServiceName="DMFSuppliesStatus"><data name="Value">{suppliesPlatformCode}</data></value><value name="pift-pen-supplies-info" ServiceName="DMFSuppliesStatus" Range="[pift-supplies-range]"><complex-data name="Value"><sub-value name="CUPSMarkerName">
+						_PIFTCUPSMarkerName()
+					</sub-value><sub-value name="SupplyType">
+						{supply}[].type
+					</sub-value><sub-value name="SupplyTypeString">
+						$kPIFTDMFSupplyMarkerTypes _GetItem({supply}[].type, "")
+					</sub-value><sub-value name="RGBColor">
+						(not _PIFTBadSupply())
+							then $kPIFTSupplyColors _GetItem(_PIFTCUPSMarkerName(), "")
+						else (_Array("black-cyan-magenta", "blue-photo", "photo-gray", "tri-color") _Contains(_PIFTCUPSMarkerName()))
+							then $kPIFTSupplyColors _GetItem("tri-color", "")
+						else $kPIFTSupplyColors _GetItem("black", "")
+					</sub-value><sub-value name="SupplyLevel">
+						(_PIFTBadSupply())
+							then -2
+						else (_PIFTShouldReportLOILevel())
+							then $kPIFTSupplyLOILevel
+						else (_PIFTShouldReportVLOILevel())
+							then $kPIFTSupplyVLOILevel
+						else (_PIFTShouldReportOOILevel())
+							then $kPIFTSupplyOOILevel
+						else _MaxValue( _Array(
+							_PIFTSupplyMinimalLevel(), _External("LevelInPercents",
+								{supply}[].level, {supply}[].maxCapacity, _PIFTSupplyDivisionsCount())))
+					</sub-value><sub-value name="SupplyClass">3</sub-value><sub-value name="SupplyMeasurementUnit">19</sub-value><sub-value name="SupplyWarningLowLevel">20</sub-value><sub-value name="SupplyWarningHighLevel">100</sub-value><sub-value name="SupplyIconInfo">
+						@nil
+					</sub-value><sub-value name="SupplyErrorDescription">
+						(_PIFTBadSupply())
+						then
+							(({supply}[].level eq -2)
+								then
+									((_PIFTSupplyErrorDescription() ne @nil)
+										then (_PIFTSupplyErrorDescription())
+										else "unknown")
+								else (_PIFTSupplyErrorDescription()))
+						else
+							(({supply}[].level eq -2)
+								then "unknown")
+						else @nil
+					</sub-value><sub-value name="PenSelectabilityNumber">
+						{supply}[].selectability
+					</sub-value><sub-value name="PenPartNumber">
+						{supply}[].partNumber
+					</sub-value></complex-data></value><value name="sure-supply-info" ServiceName="DMFDeviceStatus"><data name="Value">_Dictionary() + (@humanReadableModelName, "Product_Name") + (@humanReadableModelName, "Printer_Name") +  (@deviceSerialNumber, "Serial_Number")  + (@productNumber, "Printer_Number")
+				</data></value><value name="pift-printer-is-turned-off" ServiceName="DMFDeviceStatus"><data name="Value">
+					_AggregateIf(@allDeviceStates, $kPIFTDeviceTurnedOffStates _Contains(@element), @true, @false)
+				</data></value></values></pen-info-formatting-template></templates-container>

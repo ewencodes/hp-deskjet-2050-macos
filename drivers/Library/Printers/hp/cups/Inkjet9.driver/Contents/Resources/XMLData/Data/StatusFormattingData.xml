@@ -1,0 +1,1124 @@
+<?xml version="1.0"?>
+<templates-container xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.hp.com/schemas/imaging/con/formatting-template/2010/08/16/&#10;       ../Schemas/formatting-template.xsd"><device-status-formatting-template><constants name="TemplateConstants" link="Data/PenInfoFormattingData.xml#/templates-container/pen-info-formatting-template/constants"><constant name="kDeviceStateMap">
+				_Dictionary(
+					_Array("kIdleState"), 0,
+					_Array("kBusyState"), 1,
+					_Array("kPrintingState"), 2,
+					_Array("kOffState"), 3,
+					_Array("kInternalPrintingState"), 4,
+					_Array("kCancelingState", "kImmediateCancelingState"), 5,
+					_Array("kIncompleteState"), 6,
+					_Array("kDryTimeWaitState"), 7,
+					_Array("kPenChangingState"), 8,
+					_Array("kOutOfPaperState"), 9,
+					_Array("kBannerEjectState"), 10,
+					_Array("kBannerMismatchState"), 11,
+					_Array("kPhotoTrayMismatchState"), 12,
+					_Array("kDuplexMismatchState"), 13,
+					_Array("kPaperJamState_65563", "kPaperJamState_65911", "kPaperJamState_65585", "kPaperJamErrorState_65585"), 14,
+					_Array("kCarriageStallState_65566", "kCarriageStallState_65579", "kCarriageStallState_NoCancel_65579", "kCarriageStallState_66012"), 15,
+					_Array("kPaperJamState_65563", "kPaperJamState_65911", "kPaperJamState_65585", "kPaperJamErrorState_65585"), 16,
+					_Array("kPenFailureState"), 17,
+					_Array("kHardErrorState"), 18,
+					_Array("kPoweringDownState"), 19,
+					_Array("kFrontPanelTestState"), 20,
+					_Array("kMissingCleanoutTrayState"), 21,
+					_Array("kOutputBinFullState"), 22,
+					_Array("kMediaSizeMismatchState_65701", "kMediaSizeMismatchState_65936", "kMediaSizeMismatchState_65573"), 23,
+					_Array("kMediaDuplexBlockState"), 24,
+					_Array("kServiceStationStallState_65799"), 25,
+					_Array("kOutOfInkState"), 26,
+					_Array("kLIOProtoErrorState"), 27,
+					_Array("kPumpStallState"), 28,
+					_Array("kTrayTwoMissingState"), 29,
+					_Array("kDuplexerMissingState"), 30,
+					_Array("kRearTrayMissingState"), 31,
+					_Array("kPenNotLatchedState"), 32,
+					_Array("kBatteryIsVeryLowState"), 33,
+					_Array("kWaxSpittoonFullState"), 34,
+					_Array("kOutputTrayClosedState_65567"), 35,
+					_Array("kManualFeedBlockState"), 36,
+					_Array("kRearFeedBlockState"), 37,
+					_Array("kTray2OutOfPaperState"), 38,
+					_Array("kTrayLockedState"), 39,
+					_Array("kNonHPInkState"), 40,
+					_Array("kDeviceCalibratingState_65586", "kDeviceCalibratingState_65571"), 41,
+					_Array("kMediaTypeMismatchState"), 42,
+					_Array("kCustomMediaMismatchState"), 43,
+					_Array("kPenCleaningState"), 44,
+					_Array("kPenCheckingState"), 45,
+					_Array("kInvalidDuplexerState"), 46,
+					_Array("kDeviceSleepingState"), 52,
+					_Array("kDeviceCalibratingState_65586", "kDeviceCalibratingState_65571"), 53,
+					_Array("kDeviceInitializingState"), 55,
+					_Array("kDevicePausedState"), 59,
+					_Array("kPickMotorStallState"), 61,
+					_Array("kMechanicErrorState"), 62,
+					_Array("kInkSupplyFailureState"), 63,
+					_Array("kIDSStartupRequiredState"), 64,
+					_Array("kIDSStartingUpState"), 65,
+					_Array("kIOInstallState"), 66,
+					_Array("kMediaUpsideDownState"), 67,
+					_Array("kAIOLanguageMenuState"), 68,
+					_Array("kDCProcessingState"), 69,
+					_Array("kMediaTooWideState"), 70,
+					_Array("kDCProcessingCancelingState"), 71,
+					_Array("kGeneralErrorState_65541", "kGeneralErrorState_Support_65541"), 75,
+					_Array("kRealTimeClockFailureState_65605"), 77,
+					_Array("kGeneralErrorState_65541", "kGeneralErrorState_Support_65541"), 78,
+					_Array("kPenFailureState"), 79,
+					_Array("kPenFailureState"), 80,
+					_Array("kSharedSelectErrorState_65538"), 81,
+					_Array("kPenFailureState"), 88,
+					_Array("kSupplyUpgradeFailedState"), 89,
+					_Array("kPenFailureState"), 91,
+					_Array("kMediaTooShortToAutoduplexState_65572"), 92,
+					_Array("kPrimePumpFailureState"), 96,
+					_Array("kMediaTooShortToPrintState_65570"), 97,
+					_Array("kStartupRoutineFailedState"), 101,
+					_Array("kSHAIDElectricalFailureState"), 102,
+					_Array("kSHAIDCalibrationCounterFailureState"), 103,
+					_Array("kSHAIDOOITooEarlyFailureState"), 105,
+					_Array("kMediaTooLongToAutoduplexState_65906", "kMediaTooLongToAutoduplexState_65702", "kPaperMultiPickDuringAutoduplexState_65909"), 116,
+					_Array("kPenFailureState"), 127,
+					_Array("kNeedsAttentionState"), 128,
+					_Array("kSubscribedPagesLowII2State_65777", "kSubscribedPagesLowII2State_65737"), 130,
+					_Array("kSubscribedPagesVeryLowII2State_65778", "kSubscribedPagesVeryLowII2State_65739"), 131,
+					_Array("kSubscribedPagesOutII2State_65779", "kSubscribedPagesOutII2State_65741"), 132,
+					_Array("kSubscriptionImportantMessageAvailableII2State_65774"), 133,
+					_Array("kSubscriptionNeedConnectII2State_65781", "kSubscriptionNeedConnectII2State_65763"), 134,
+					_Array("kSubscriptionSuccessfulII2State_65767"), 135,
+					_Array("kSubscriptionCancellationSuccessfulII2State_65768"), 136,
+					_Array("kOrderCartridgeII2State_65780", "kOrderCartridgeII2State_65744"), 137,
+					_Array("kSizeMismatchLargerMediaInTrayState_65716"), 141,
+					_Array("kSizeMismatchSmallerMediaInTrayState_65717"), 142,
+					_Array("kInputTrayOverLoadedState_65789"), 143,
+					_Array("kFailedPrintHeadState"), 148,
+					_Array("kIncompatiblePrintHeadState"), 149,
+					_Array("kOutputTrayOpenedState"), 150,
+					_Array("kOutputBinFullErrorState"), 159,
+					_Array("kProcessingInQuietModeState"), 167,
+					_Array("kConsumableSubscriptionOptionNotSetXMO2State_65849"), 168,
+					_Array("kProcessingInQuietModeIgnoredState"), 170,
+					_Array("kTrialConsumableCountExceededState"), 171,
+					_Array("kInQuietModeState_65811"), 172,
+					_Array("kQuietModeIgnoredState_65853"), 173,
+					_Array("kUseNewForStartupState"), 174,
+					_Array("kInSafeStopModeState"), 176,
+					_Array("kFailedStartupState_65860"), 177,
+					_Array("kUnauthorizedSupplyState"), 178,
+					_Array("kSetupSupplyUpgradeFailedState"), 179,
+					_Array("kPaperRunningLowState_65920", "kPaperRunningLowState_65940"), 181,
+					_Array("kActionRequiredState_66011", "kActionRequiredState_66068"), 191,
+					_Array("kMaximumAllowedPrimingReachedState_66069"), 219
+				)
+			</constant><constant name="kPaperErrorStates">
+				_Array(
+					"kPaperJamState_65563",
+					"kPaperJamState_65911",
+					"kPaperJamState_65585",
+					"kPaperJamErrorState_65585",
+					"kMediaSizeMismatchState_65701",
+					"kMediaSizeMismatchState_65936",
+					"kMediaSizeMismatchState_65573",
+					"kMediaTypeMismatchState",
+					"kOutOfPaperState",
+					"kMediaUpsideDownState",
+					"kMediaTooWideState",
+					"kMediaTooShortToAutoduplexState_65572",
+					"kMediaTooLongToAutoduplexState_65906"
+				)
+				</constant><constant name="kCDPrintingStateMap">
+				_Dictionary(
+					"kCDTrayMisalignedErrorState", 1,
+					"kCDCarrierNotEngagedErrorState", 2,
+					"kCDMissingErrorState", 3,
+					"kCDUpsideDownErrorState", 4,
+					"kCDMediaSizeMismatchErrorState", 5,
+					"kCDNotPrintableErrorState", 6,
+					"kCDMediaLoadErrorState", 7,
+					"kCDManualLoadRequiredErrorState", 8,
+					"kCDManualLoadRequiredErrorState", 9,
+					"kCDTrayMisalignedErrorState", 10
+				)
+			</constant><constant name="kDMCDTrayStateClosedError">1</constant><constant name="kDMCDTrayStateOpenedError">2</constant><constant name="kPhotoTrayStateMap">
+				_Dictionary(
+					"kPhotoTrayEngageFailedState", 0,
+					"kPhotoTrayDisengageFailedState", 2
+				)
+			</constant><constant name="kBBCStateMap">
+				_Dictionary(
+					"kMediaUpsideDownState", 2,
+					"kMediaSizeMismatchState_65701", 3,
+					"kMediaTypeMismatchState", 4,
+					"kDuplexNotSupportedState", 6,
+					"kMediaTypeMismatchState", 7
+				)
+			</constant><constant name="kDMCoverStateOpened">1</constant><constant name="kDMADFCoverStateOpened">3</constant><constant name="kDMADFScannerFeederJam">4</constant><constant name="kDMScannerMispick">10</constant><constant name="kDMScannerFeederJamOrDirty">12</constant><constant name="kSupplyStateAuthLevel1Mask">0x00000001</constant><constant name="kSupplyStateAuthLevel2Mask">0x00000002</constant><constant name="kSupplyStateAuthLevel3Mask">0x00000004</constant><constant name="kSupplyStateAuthLevel4Mask">0x00000008</constant><constant name="kSupplyStateGenuineHPUnsupportedMask">0x00000100</constant><constant name="kSupplyStateDefectiveMemoryMask">0x00000200</constant><constant name="kSupplyStateMissingMemoryMask">0x00000400</constant><constant name="kSupplyStateLowConditionMask">0x00000800</constant><constant name="kSupplyStateOutConditionMask">0x00001000</constant><constant name="kSupplyStateIncorrectMask">0x00002000</constant><constant name="kSupplyStateMissingMask">0x00004000</constant><constant name="kSupplyStateStatusAreValidMask">0x00008000</constant><constant name="kSupplyStateVeryLowConditionMask">0x40000000</constant><constant name="kSupplyStatePendingRemove">0x00010000</constant><constant name="kSupplyStatePendingReseat">0x00020000</constant><constant name="kSupplyStatePendingReplace">0x00040000</constant><constant name="kSupplyStateUnknown">0x00080000</constant><constant name="kSupplyStateRefilled">0x00100000</constant><constant name="kSupplyStateOk">0x00200000</constant><constant name="kSupplyStateExpiredMask">0x00400000</constant><constant name="kSupplyStateNearExpirationMask">0x00800000</constant><constant name="kSupplyStateDepletedMask">0x02000000</constant><constant name="kSupplyStateFailureMask">0x04000000</constant><constant name="kSupplyStateIncorrectlyInstalledMask">0x08000000</constant><constant name="kSupplyStateSharedAddressError">0x10000000</constant><constant name="kSupplyStateIncompatible">0x20000000</constant><constant name="kSupplySubstateVirginPen">0</constant><constant name="kSupplySubstateNonHPInkInstalled">1</constant><constant name="kSupplySubstateHPInkInstalled">2</constant><constant name="kSupplySubstateUnknownInkSupply">3</constant><constant name="kSupplySubstateDriverAckOfPenSupplyInfo">4</constant><constant name="kSupplySubstateWrongHost">5</constant><constant name="kSupplySubstateWrongRegion">6</constant><constant name="kSupplySubstateWrongSlot">7</constant><constant name="kSupplySubstateSupplyInReserveMode">8</constant><constant name="kSupplySubstateSupplyMetallic">9</constant><constant name="kSupplySubstateNonHPInkInstalledAcknowledge">10</constant><constant name="kSupplySubstateHPInkInstalledAcknowledge">11</constant><constant name="kSupplySubstateNonHPSupplyOut">12</constant><constant name="kSupplySubstatePreviouslyUsedCartridgeInstalled">13</constant><constant name="kSupplySubstatePreviouslyUsedCartridgeInstalledAcknowledge">14</constant><constant name="kSupplySubstateIntroCartridgeInstalled">15</constant><constant name="kSupplySubstateIntroCartridgeInstalledAcknowledge">16</constant><constant name="kSupplySubstateEmptyCartridgeInstalled">17</constant><constant name="kSupplySubstateEmptyCartridgeInstalledAcknowledge">21</constant><constant name="kSupplySubstateInReserveMode">20</constant><constant name="kSupplySubstateRefilledDepletedAcknowledge">22</constant><constant name="kSupplySubstateLowAcknowledge">23</constant><constant name="kSupplySubstateOutAcknowledge">24</constant><constant name="kSupplySubstateExpiredAcknowledge">25</constant><constant name="kSupplySubstateNearExpirationAcknowledge">26</constant><constant name="kSupplySubstateDriverNotAckOfPenSupplyInfo">27</constant><constant name="kSupplySubstateWrongTrade">29</constant><constant name="kSupplySubstateAntiTheftEnabledSupply">30</constant><constant name="kSupplySubstateUpgradeDetected">31</constant><constant name="kSupplySubstateUpgradeFailed">32</constant><constant name="kSupplySubstateUpgradeSuccess">33</constant><constant name="kSupplySubstateForwardIncompatible">34</constant><constant name="kSupplySubstateCartridgeRefilled">35</constant><constant name="kSupplySubstateCartridgeCounterfeit">36</constant><constant name="kSupplySubstateCounterfeitQuestion">37</constant><constant name="kSupplySubstateInReserveModeAcknowledge">38</constant><constant name="kSupplySubstateSupportMessage">39</constant><constant name="kSupplySubstateInkLowToStartUp">40</constant><constant name="kSupplySubstateSHAIDElectricalFailure">42</constant><constant name="kSupplySubstateSHAIDCalibrationCounterFailure">43</constant><constant name="kSupplySubstateSEHOAtInsertion">44</constant><constant name="kSupplySubstateOOBESecureUpgradeFailed">45</constant><constant name="kSupplySubstateSubscriptionConsumableTemporaryUsageAllowed">46</constant><constant name="kSupplySubstateSubscriptionConsumableNeedsEnrollment">47</constant><constant name="kSupplySubstateAlteredNotEnabled">49</constant><constant name="kSupplySubstateNearlyAltered">50</constant><constant name="kSupplySubstateConsumableForAnotherPrinter">51</constant><constant name="kSupplySubstateVeryLowAcknowledge">56</constant><constant name="kSupplySubstateTrialConsumableRejected">58</constant><constant name="kSupplyAdditionalLevelEurekaLOI">0</constant><constant name="kSupplyAdditionalLevelEurekaLOIAcknowledgement">1</constant><constant name="kSupplyAdditionalLevelEurekaVLOI">2</constant><constant name="kSupplyAdditionalLevelEurekaVLOIAcknowledgement">3</constant><constant name="kSupplyAdditionalLevelEurekaOOI">4</constant><constant name="kSupplyAdditionalLevelEurekaOOIAcknowledgement">5</constant><constant name="kSupplyAdditionalLevelEurekaLOIWithContinue">6</constant><constant name="kSupplyAdditionalLevelEurekaLOIWithContinueAcknowledgement">7</constant><constant name="kSupplyAdditionalLevelEurekaVLOIWithContinue">8</constant><constant name="kSupplyAdditionalLevelEurekaVLOIWithContinueAcknowledgement">9</constant><constant name="kSupplyAdditionalLevelEurekaOOIWithContinue">10</constant><constant name="kSupplyAdditionalLevelEurekaOOIWithContinueAcknowledgement">11</constant><constant name="kSupplyAdditionalLevelEurekaIntroLOI">12</constant><constant name="kSupplyAdditionalLevelEurekaIntroLOIAcknowledgement">13</constant><constant name="kSupplyAdditionalLevelEurekaIntroVLOI">14</constant><constant name="kSupplyAdditionalLevelEurekaIntroVLOIAcknowledgement">15</constant><constant name="kSupplyAdditionalLevelEurekaIntroOOI">16</constant><constant name="kSupplyAdditionalLevelEurekaIntroOOIAcknowledgement">17</constant><constant name="kSupplyAdditionalLevelOOIWithOverride">18</constant><constant name="kSupplyAdditionalLevelOOIWithOverrideAcknowledgement">19</constant><constant name="kSupplyAdditionalLevelInkAlert">20</constant><constant name="kSupplyAdditionalLevelInkAlertAcknowledgement">21</constant><constant name="kSupplyAdditionalLevelIntroLOI">22</constant><constant name="kSupplyAdditionalLevelIntroLOIAcknowledgement">23</constant><constant name="kSupplyAdditionalLevelOOI">24</constant><constant name="kSupplyAdditionalLevelOOIAcknowledgement">25</constant><constant name="kSupplyAdditionalLevelInkAlertWithOverride">26</constant><constant name="kSupplyAdditionalLevelInkAlertWithOverrideAcknowledgement">27</constant><constant name="kSupplyAdditionalLevelVLOIWithOverride">28</constant><constant name="kSupplyAdditionalLevelVLOIWithOverrideAcknowledgement">29</constant><constant name="kSupplyAdditionalLevelVLOI">30</constant><constant name="kSupplyAdditionalLevelVLOIAcknowledgement">31</constant><constant name="kSupplyEverydayStatusNormal">1</constant><constant name="kSupplyEverydayStatusUnknown">2</constant><constant name="kSupplyEverydayStatusDiluted">3</constant><constant name="kSupplyEverydayStatusStandard">4</constant><constant name="kSupplyEverydayStatusDepleted">5</constant><constant name="kSupplyEverydayStatusDilutedAndDepleted">6</constant><constant name="kSupplyTypeInk">5</constant><constant name="kSupplyTypeInkCartridge">6</constant><constant name="kSupplyTypePrinthead">38</constant><constant name="kBatteryConditionOK">0</constant><constant name="kBatteryConditionMissing">1</constant><constant name="kBatteryConditionCharging">2</constant><constant name="kBatteryConditionFaulty">3</constant><constant name="kBatteryLevelTriggerUnknown">0</constant><constant name="kBatteryLevelTriggerVeryLow">1</constant><constant name="kBatteryLevelTriggerLow">2</constant><constant name="kBatteryLevelTriggerHigh">3</constant><constant name="kDeviceSubstateWaxSpittoonCapacitySufficient">4</constant><constant name="kDeviceSubstateWaxSpittoonAlmostFull">3</constant><constant name="kDeviceSubstateWaxSpittoonFull">0</constant><constant name="kDeviceSubstateWaxSpittoonNeedsImmediateReplacement">5</constant><constant name="kCameraStateNoError">0</constant><constant name="kCameraStateGeneralError">1</constant><constant name="kCameraStateUnsupportedDevice">2</constant><constant name="kCameraStateUnsupportedCamera">3</constant><constant name="kCameraStateCameraDisconnected">4</constant><constant name="kCameraStateCameraNotResponding">5</constant><constant name="kCameraStateJobCancelled">6</constant><constant name="kCameraStateImageCorrupted">7</constant><constant name="kSupplySubscriptionCapabilityInstantInk">1</constant><constant name="kSupplySubscriptionCapabilityNonInstantInk">2</constant><constant name="kDMFSupplyColorsMap">
+				_Dictionary(
+					"kPenColorK",			"black",
+					"kPenColorC",			"cyan",
+					"kPenColorM",			"magenta",
+					"kPenColorY",			"yellow",
+					"kPenColorLowC",		"lightcyan",
+					"kPenColorLowM",		"lightmagenta",
+					"kPenColorCMY",		"tricolor",
+					"kPenColorKCM",		"photo",
+					"kPenColorGZ",			"grayphoto",
+					"kPenColorBCM",		"bluephoto",
+					"kPenColorLowG",		"lightgray",
+					"kPenColorG",			"gray",
+					"kPenColorKC",			"black-cyan",
+					"kPenColorMY",			"magenta-yellow",
+					"kPenColorLowCLowM", "lightcyan-lightmagenta",
+					"kPenColorPK",			"photoblack",
+					"kPenColorKY",			"black-yellow",
+					"kPenColorCM",			"cyan-magenta",
+					"kPenColorSilver",	"silver",
+					"kPenColorLowCLowM", "lightcyanlightmagenta",
+					"kPenColorKY",			"blackyellow",
+					"kPenColorCM",			"cyanmagenta",
+					"kPenColorKC",			"blackcyan",
+					"kPenColorMY",			"magentayellow",
+					"kPenColorMK",			"matteblack",
+					"kPenColorGZ",			"lightgrayphotoblack",
+					"kPenColorGZ",			"photoblacklightgray",
+					"kPenColorKC",			"matteblackcyan",
+					"kPenColorKC",			"cyanmatteblack",
+					"kPenColorMY",			"yellowmagenta",
+					"kPenColorLowCLowM", "lightmagentalightcyan",
+					"kPenColorMC",			"magentacyan",
+					"kPenColorCMYK",		"cyanmagentayellowblack",
+					"kPenColorKCMYPK",	"blackcyanmagentayellowphotoblack"
+				)
+			</constant><constant name="kLOIDSensorStateMap">
+				_Dictionary(
+					"kLOIDSensorBlockedState", 1,
+					"kLOIDAerosolFailureState", 3,
+					"kLOIDElectricFailureState", 4
+				)
+			</constant><constant name="kPhotoTrayStateMap">
+				_Dictionary(
+					"kPhotoTrayEngageFailedState", 0,
+					"kPhotoTrayDisengageFailedState", 2
+				)
+			</constant><constant name="kDiaperStateMap">
+				_Dictionary(
+					"kDiaperAlmostFullState", 1,
+					"kDiaperFullState", 2,
+					"kDiaperFullState", 3
+				)
+			</constant><constant name="kSupplyColorsRepresentation">
+				_Dictionary(
+					"#000000",						"black",
+					"#00c0c0",						"cyan",
+					"#c000c0",						"magenta",
+					"#c0c000",						"yellow",
+					"#191919",						"photoblack",
+					"#00ffff#ff00ff#ffff00",	"tricolor",
+					"#ffffff",						"transparent",
+					"#7f7f7f",						"gray",
+					"#0000ff",						"blue",
+					"#00ff00",						"green",
+					"#ff00ff",						"lightmagenta",
+					"#00ffff",						"lightcyan",
+					"#f0f0f0",						"lightgray",
+					"#000000",						"matteblack",
+					"#ff0000",						"red",
+					"#00ffff#ff00ff#191919",	"photo",
+					"#00ffff#0000ff#ff00ff",	"bluephoto",
+					"#f0f0f0#7f7f7f#191919",	"grayphoto",
+					"#00c0c0",						"blueprintcyan",
+					"#c000c0",						"blueprintmagenta"
+				)
+			</constant><constant name="kDMDeviceAlertUserActionAcknowledgeConsumableState">"com.hp.dmf.Status.DeviceAlert.UserAction.acknowledgeConsumableState"</constant></constants><macroses name="TemplateMacroses" link="Data/PenInfoFormattingData.xml#/templates-container/pen-info-formatting-template/macroses"><macros name="MakeCartridgeStatusInfo">
+				_Dictionary(@arg0, "cartridgesColors", @arg1, "cartridgeState", @arg2, "cartridgeType")
+			</macros><macros name="FormatCartridgeStatus">
+				(@arg0 ne @nil and @arg0 _GetSize() ne 0)
+				then _MakeCartridgeStatusInfo(_Aggregate(@arg0, @initial + _SupplyColor(), _Array()), @arg1, @arg2)
+				else _NoCartridgeError()
+			</macros><macros name="MakeSupplyStatus">_FormatCartridgeStatus([supplies-info-set] _GetItem(@arg0), @arg0, [supplies-type])</macros><macros name="MakePenStatus">_FormatCartridgeStatus([pens-info-set] _GetItem(@arg0), @arg0, [pens-type])</macros><macros name="NoCartridgeError">@nil</macros><macros name="SupplyColor">$kDMFSupplyColorsMap _GetItem({supply}[].color or {supply}[].expectedColor)</macros></macroses><values name="TemplateValues" link="Data/PenInfoFormattingData.xml#/templates-container/pen-info-formatting-template/values"><value name="check-sequence"><data name="Value">
+					_Array(
+						"check-sequence-stage-1",
+						"kCheckPrinterAndSuppliesStatus",
+						"check-sequence-stage-3",
+						"kReportSuppliesStatus",
+						"check-sequence-stage-5")
+				</data></value><value name="check-sequence-stage-1"><data name="Value">
+					@nil
+				</data></value><value name="check-sequence-stage-3"><data name="Value">
+					[covers-status] or
+					[scanner-status] or
+					[alignment-status]
+				</data></value><value name="check-sequence-stage-5"><data name="Value">
+					[reserve-mode-status]
+				</data></value><value name="DMF-device-states" ServiceName="DMFDeviceStatus"><data name="Value">_AggregateIf(@allDeviceStates, (@element ne 9) or not [is-tray-empty], @initial + $kDeviceStateMap _GetItem (@element), _Array())</data></value><value name="DMF-most-priority-device-state" ServiceName="DMFDeviceStatus"><data name="Value">
+					(@allDeviceStates ne @nil and @allDeviceStates _GetSize() ne 0) then
+							@allDeviceStates _GetItem(0)
+				</data></value><value name="sorted-supported-device-states" ServiceName="ServiceMethodsContainer"><data name="Value">
+					@sortedSupportedDeviceStates
+				</data></value><value name="CS-device-states"><data name="Value">_AggregateIf([DMF-device-states], [sorted-supported-device-states] _Contains (@element), @initial + @element, _Array())</data></value><value name="CS-prioritized-device-states"><data name="Value">_AggregateIf([sorted-supported-device-states], [CS-device-states] _Contains (@element), @initial + @element, _Array())</data></value><value name="CS-most-priority-device-state"><data name="Value">
+					([CS-prioritized-device-states] ne @nil and [CS-prioritized-device-states] _GetSize() ne 0)
+					then
+						[CS-prioritized-device-states] _GetItem(0)
+				</data></value><value name="CS-prioritized-device-state" ServiceName="DMFDeviceStatus"><data name="Value">
+					([CS-prioritized-device-states] ne @nil and [CS-most-priority-device-state] ne "kPenChangingState")
+					then
+					(
+						([CS-most-priority-device-state] eq "kPenFailureState" and [supplies-count] eq [missing-supplies] _GetSize())
+						then
+							"kInkSupplyFailureState"
+						else 
+							[CS-most-priority-device-state]
+					)
+				</data></value><value name="printer-state-base" ServiceName="DMFDeviceStatus"><data name="Value">
+					[CS-prioritized-device-state] or "kIdleState"
+				</data></value><value name="printer-state" ServiceName="DMFDeviceStatus"><data name="Value">
+					(([printer-state-base] eq "kSubscribedPagesLowII2State_65777" or [printer-state-base] eq "kSubscribedPagesLowII2State_65737") and [subscribed-pages-account-problems] _Contains("subscribedPagesLow"))
+					then
+						"kSubscribedPagesLowAccountProblemII2State_65738"
+					else (([printer-state-base] eq "kSubscribedPagesVeryLowII2State_65778" or [printer-state-base] eq "kSubscribedPagesVeryLowII2State_65739") and [subscribed-pages-account-problems] _Contains("subscribedPagesVeryLow"))
+					then
+						"kSubscribedPagesVeryLowAccountProblemII2State_65740"
+					else (([printer-state-base] eq "kSubscribedPagesOutII2State_65779" or [printer-state-base] eq "kSubscribedPagesOutII2State_65741") and [subscribed-pages-account-problems] _Contains("subscribedPagesOut"))
+					then
+						"kSubscribedPagesOutAccountProblemII2State_65742"
+					else ([printer-state-base] eq "kSubscriptionImportantMessageAvailableII2State_65774" and [is-subscription-important-message-error])
+					then
+						"kSubscriptionImportantMessageAvailableErrorII2State_65743"
+					else (([printer-state-base] eq "kMediaSizeMismatchState_65701" or [printer-state-base] eq "kMediaSizeMismatchState_65936" or [printer-state-base] eq "kMediaSizeMismatchState_65573") and [is-paper-length-mismatch-65809])
+					then
+						"kPaperLengthMismatchState_65809"
+					else (([printer-state-base] eq "kMediaSizeMismatchState_65701" or [printer-state-base] eq "kMediaSizeMismatchState_65936" or [printer-state-base] eq "kMediaSizeMismatchState_65573") and [is-paper-length-mismatch-65810])
+					then
+						"kPaperLengthMismatchState_65810"
+					else (([printer-state-base] eq "kMediaSizeMismatchState_65701" or [printer-state-base] eq "kMediaSizeMismatchState_65936" or [printer-state-base] eq "kMediaSizeMismatchState_65573") and [is-media-size-mismatch-65573])
+					then
+						"kMediaSizeMismatchState_65573"
+					else (([printer-state-base] eq "kMediaSizeMismatchState_65701" or [printer-state-base] eq "kMediaSizeMismatchState_65936" or [printer-state-base] eq "kMediaSizeMismatchState_65573") and [is-media-size-mismatch-65701])
+					then
+						"kMediaSizeMismatchState_65701"
+					else ([printer-state-base] eq "kSharedSelectErrorState_65538" and [is-ink-subscription-enabled] eq @true)
+					then
+						"kSharedSelectErrorStateIS_65770"
+					else ([printer-state-base] eq "kSubscriptionCancellationSuccessfulII2State_65768" and [is-subscription-cancelled-xmo2] eq @true)
+					then
+						"kSubscriptionCanceledXMO2State_65850"
+					else ([printer-state-base] eq "kSubscriptionSuccessfulII2State_65767" and [is-subscription-successful-xmo2] eq @true)
+					then
+						"kSubscriptionSuccessfulXMO2State_65845"
+					else ([printer-state-base] eq "kOutOfPaperState" and [is-palermo-tray-empty] eq @true)
+					then
+						"kPaperEmptyState_65921"
+					else (([printer-state-base] eq "kMediaTooLongToAutoduplexState_65906" or [printer-state-base] eq "kMediaTooLongToAutoduplexState_65702" or [printer-state-base] eq "kPaperMultiPickDuringAutoduplexState_65909") and [is-paper-multi-pick-during-autoduplex])
+					then
+						"kPaperMultiPickDuringAutoduplexState_65909"
+					else (([printer-state-base] eq "kMediaTooLongToAutoduplexState_65906" or [printer-state-base] eq "kMediaTooLongToAutoduplexState_65702" or [printer-state-base] eq "kPaperMultiPickDuringAutoduplexState_65909") and [is-verona-too-long-to-autoduplex])
+					then
+						"kMediaTooLongToAutoduplexState_65910"
+					else
+						[printer-state-base]
+				</data></value><value name="processing-job" ServiceName="DMFDeviceStatus"><data name="Value">[DMF-device-states] _Contains("kPrintingState") or [DMF-device-states] _Contains("kDryTimeWaitState")</data></value><value name="reserve-mode-supported" ServiceName="DMFDeviceStatus"><data name="Value">@reserveModeState ne @nil and @reserveModeState ne 0</data></value><value name="reserve-mode-status" ServiceName="DMFDeviceStatus"><data name="Value">
+					([printer-state] eq "kPrintingState" and @reserveModeState ne @nil and @reserveModeState eq 1) then
+					"kReserveModePrintingMetaState" else @nil
+				</data></value><value name="is-in-reserve-mode" ServiceName="DMFDeviceStatus"><data name="Value">@reserveModeState ne @nil and @reserveModeState eq 1</data></value><value name="covers-status" ServiceName="DMFCoversStatus"><data name="Value">
+					({cover}[RearDoor].state eq $kDMCoverStateOpened
+					or {cover}[LeftDoor].state eq $kDMCoverStateOpened)
+					then
+						"kPenChangingState"
+					else ({cover}[TopCover].state eq $kDMCoverStateOpened)
+					then
+						"kCoverOpenState"
+					else ({cover}[SupplyCover].state eq $kDMCoverStateOpened)
+					then
+						"kInkSupplyCoverOpenState"
+					else ({cover}[ADFCover].state eq $kDMCoverStateOpened)
+					then
+						"kADFCoverOpenState_65616"
+					else
+						@nil
+				</data></value><value name="cd-printing-status" ServiceName="DMFCDPrintingStatus"><data name="Value">
+					({isCDPrintingSupported} ne @nil and {isCDPrintingSupported} ne 0) then
+					(
+						({CDTrayState} eq $kDMCDTrayStateClosedError then "kOpenSpecialTrayErrorState") else
+						({CDTrayState} eq $kDMCDTrayStateOpenedError then "kCloseSpecialTrayErrorState") else
+						(_Array("CDTray", "SpecialTray") _Contains(_InputValue("MediaSourceCodeName")))
+							then $kCDPrintingStateMap _GetItem({CDPrintingState})
+					)
+					else @nil
+				</data></value><value name="photo-tray-status" ServiceName="DMFDeviceStatus"><data name="Value">
+					_InputValue("MediaSourceCodeName") eq "PhotoTray" then
+						$kPhotoTrayStateMap _GetItem(@photoTrayState)
+						else @nil
+				</data></value><value name="diaper-status" ServiceName="DMFDeviceStatus"><data name="Value">
+					$kDiaperStateMap _GetItem(@diaperState)
+				</data></value><value name="bbc-status" ServiceName="DMFDeviceStatus"><data name="Value">
+					$kBBCStateMap _GetItem(@bbcMediaState)
+				</data></value><value name="alignment-status" ServiceName="DMFDeviceStatus"><data name="Value">
+					((@printheadAlignmentState eq 0) or (@deviceUIState eq 6))
+					then
+						"kAlignmentNeededMetaState_65569"
+					else ([is-alignment-failed] eq @true)
+					then
+						"kAlignmentFailedState_65914"
+					else ([is-alignment-finished] eq @true)
+					then
+						"kAlignmentFinishedState_65915"
+					else
+						@nil
+				</data></value><value name="LOID-sensor-status" ServiceName="DMFDeviceStatus"><data name="Value">
+					$kLOIDSensorStateMap _GetItem(@loidSensorState)
+				</data></value><value name="supplies-range" ServiceName="DMFSuppliesStatus"><data name="Value">
+					{suppliesIdentifiers} _Filter(
+						{supply}[].type eq $kSupplyTypeInk or {supply}[].type eq $kSupplyTypeInkCartridge)
+				</data></value><value name="supplies-count"><data name="Value">[supplies-range] _GetSize()</data></value><value name="installed-supplies-range" ServiceName="DMFSuppliesStatus"><data name="Value">[supplies-range] _Filter(not ({supply}[].state bitand $kSupplyStateMissingMask eq $kSupplyStateMissingMask))</data></value><value name="installed-pens-range" ServiceName="DMFSuppliesStatus"><data name="Value">[pens-range] _Filter(not ({supply}[].state bitand $kSupplyStateMissingMask eq $kSupplyStateMissingMask))</data></value><value name="installed-supplies-names" ServiceName="DMFSuppliesStatus"><data name="Value">_Aggregate([installed-supplies-range], @initial + _SupplyColor(), _Array())</data></value><value name="installed-pens-names" ServiceName="DMFSuppliesStatus"><data name="Value">_Aggregate([installed-pens-range], @initial + _SupplyColor(), _Array())</data></value><value name="missing-supplies" ServiceName="DMFSuppliesStatus"><data name="Value">
+					_AggregateIf([supplies-range],
+						({supply}[].state bitand $kSupplyStateMissingMask) eq $kSupplyStateMissingMask,
+						@initial + _SupplyColor(), _Array())
+				</data></value><value name="supplies-info-set" ServiceName="DMFSuppliesStatus"><complex-data name="Value"><sub-value name="kCartridgeStateAntiTheft_65612">
+						[supplies-range] _Filter(
+							{supply}[].substate _Contains $kSupplySubstateAntiTheftEnabledSupply
+							and {supply}[].subscriptionCapability ne $kSupplySubscriptionCapabilityInstantInk
+							and [is-ink-subscription-enabled] eq @false
+						)
+					</sub-value><sub-value name="kCartridgeStateAntiTheftIS_65694">
+						[supplies-range] _Filter(
+							{supply}[].substate _Contains $kSupplySubstateAntiTheftEnabledSupply
+							and {supply}[].subscriptionCapability ne $kSupplySubscriptionCapabilityInstantInk
+							and [is-ink-subscription-enabled] eq @true
+						)
+					</sub-value><sub-value name="kCartridgeStateAntiTheftII2_65773">
+						[supplies-range] _Filter(
+							{supply}[].substate _Contains $kSupplySubstateAntiTheftEnabledSupply
+							and {supply}[].subscriptionCapability eq $kSupplySubscriptionCapabilityInstantInk
+						)
+					</sub-value><sub-value name="kCartridgeStateBad_65542">
+						[supplies-range] _Filter(
+							{supply}[].state bitand $kSupplyStateFailureMask ne 0
+							and [is-ink-subscription-enabled] eq @false
+						)
+					</sub-value><sub-value name="kCartridgeStateBadIS_65675">
+						[supplies-range] _Filter(
+							{supply}[].state bitand $kSupplyStateFailureMask ne 0
+							and [is-ink-subscription-enabled] eq @true
+						)
+					</sub-value><sub-value name="kCartridgeStateBadIS_CartridgeProblem_65675">
+						[supplies-range] _Filter(
+							{supply}[].state bitand $kSupplyStateFailureMask ne 0
+							and [is-ink-subscription-enabled] eq @true
+						)
+					</sub-value><sub-value name="kCartridgeStateCounterfeit_65617">
+						[supplies-range] _Filter(
+							{supply}[].state bitand $kSupplyStateRefilled ne 0
+							and {supply}[].substate _Contains $kSupplySubstateCartridgeCounterfeit
+							and [is-ink-subscription-enabled] eq @false
+						)
+					</sub-value><sub-value name="kCartridgeStateCounterfeitIS_65686">
+						[supplies-range] _Filter(
+							{supply}[].state bitand $kSupplyStateRefilled ne 0
+							and {supply}[].substate _Contains $kSupplySubstateCartridgeCounterfeit
+							and [is-ink-subscription-enabled] eq @true
+						)
+					</sub-value><sub-value name="kCartridgeStateCounterfeitQuestion_65592">
+						[supplies-range] _Filter(
+							{supply}[].state bitand $kSupplyStateRefilled ne 0
+							and {supply}[].substate _Contains $kSupplySubstateCounterfeitQuestion
+							and [is-ink-subscription-enabled] eq @false
+						)
+					</sub-value><sub-value name="kCartridgeStateCounterfeitQuestionIS_65685">
+						[supplies-range] _Filter(
+							{supply}[].state bitand $kSupplyStateRefilled ne 0
+							and {supply}[].substate _Contains $kSupplySubstateCounterfeitQuestion
+							and [is-ink-subscription-enabled] eq @true
+						)
+					</sub-value><sub-value name="kCartridgeStateForwardIncompatible_65598">
+						[supplies-range] _Filter(
+							{supply}[].substate _Contains $kSupplySubstateForwardIncompatible
+							and [is-ink-subscription-enabled] eq @false
+						)
+					</sub-value><sub-value name="kCartridgeStateForwardIncompatible_Support_65598" link="Data/StatusFormattingData.xml#/templates-container/device-status-formatting-template/values[@name='TemplateValues']/value[@name='supplies-info-set']/complex-data[@name='Value']/sub-value[@name='kCartridgeStateForwardIncompatible_65598']"/><sub-value name="kCartridgeStateForwardIncompatibleIS_65689">
+						[supplies-range] _Filter(
+							{supply}[].substate _Contains $kSupplySubstateForwardIncompatible
+							and [is-ink-subscription-enabled] eq @true
+						)
+					</sub-value><sub-value name="kCartridgeStateForwardIncompatibleIS_Support_65689" link="Data/StatusFormattingData.xml#/templates-container/device-status-formatting-template/values[@name='TemplateValues']/value[@name='supplies-info-set']/complex-data[@name='Value']/sub-value[@name='kCartridgeStateForwardIncompatibleIS_65689']"/><sub-value name="kCartridgeStateHPInkDepleted_65594">
+						[supplies-range] _Filter(
+							{supply}[].state bitand $kSupplyStateRefilled ne 0
+							and
+								({supply}[].substate _Contains $kSupplySubstateCartridgeRefilled
+								or {supply}[].substate _Contains $kSupplySubstateDriverNotAckOfPenSupplyInfo
+								or {supply}[].substate _Contains $kSupplySubstateDriverAckOfPenSupplyInfo)
+							and [is-ink-subscription-enabled] eq @false
+							and not [is-depleted-pay-for-print]
+						)
+					</sub-value><sub-value name="kCartridgeStateHPInkDepletedIS_65687">
+						[supplies-range] _Filter(
+							{supply}[].state bitand $kSupplyStateRefilled ne 0
+							and
+								({supply}[].substate _Contains $kSupplySubstateCartridgeRefilled
+								or {supply}[].substate _Contains $kSupplySubstateDriverNotAckOfPenSupplyInfo
+								or {supply}[].substate _Contains $kSupplySubstateDriverAckOfPenSupplyInfo)
+							and [is-ink-subscription-enabled] eq @true
+							and not [is-depleted-pay-for-print]
+						)
+					</sub-value><sub-value name="kCartridgeStateIncompatible_65543">
+						[supplies-range] _Filter(
+							{supply}[].state bitand ($kSupplyStateIncompatible bitor $kSupplyStateIncorrectMask) ne 0
+							and not {supply}[].substate _Contains $kSupplySubstateWrongTrade
+							and not {supply}[].substate _Contains $kSupplySubstateWrongHost
+							and not {supply}[].substate _Contains $kSupplySubstateForwardIncompatible
+							and [is-ink-subscription-enabled] eq @false
+							and not [DMF-device-states] _Contains("kInSafeStopModeState")
+						)
+					</sub-value><sub-value name="kCartridgeStateIncompatibleIS_65676">
+						[supplies-range] _Filter(
+							{supply}[].state bitand ($kSupplyStateIncompatible bitor $kSupplyStateIncorrectMask) ne 0
+							and not {supply}[].substate _Contains $kSupplySubstateWrongTrade
+							and not {supply}[].substate _Contains $kSupplySubstateWrongHost
+							and not {supply}[].substate _Contains $kSupplySubstateForwardIncompatible
+							and [is-ink-subscription-enabled] eq @true
+							and not [DMF-device-states] _Contains("kInSafeStopModeState")
+						)
+					</sub-value><sub-value name="kCartridgeStateLowOfInkToStartUp_65602">
+						[supplies-range] _Filter(
+							{supply}[].substate _Contains $kSupplySubstateInkLowToStartUp
+						)
+					</sub-value><sub-value name="kCartridgeStateLowOnInk_65557">
+						[supplies-range] _Filter(
+							(({supply}[].state bitand $kSupplyStateLowConditionMask ne 0
+								and {supply}[].substate _Contains $kSupplySubstateLowAcknowledge)
+							or
+								({supply}[].additionalInkLevelInfo _Contains $kSupplyAdditionalLevelInkAlertWithOverride
+								and {supply}[].additionalInkLevelInfo _Contains $kSupplyAdditionalLevelInkAlertWithOverrideAcknowledgement))
+							and [is-ink-subscription-enabled] eq @false
+							and not [is-low-on-ink-advertisement]
+							and not [is-low-on-ink-xmo2]
+						)
+					</sub-value><sub-value name="kCartridgeStateLowOnInk_65558" link="Data/StatusFormattingData.xml#/templates-container/device-status-formatting-template/values[@name='TemplateValues']/value[@name='supplies-info-set']/complex-data[@name='Value']/sub-value[@name='kCartridgeStateLowOnInk_65557']"/><sub-value name="kCartridgeStateLowOnInk_65669" link="Data/StatusFormattingData.xml#/templates-container/device-status-formatting-template/values[@name='TemplateValues']/value[@name='supplies-info-set']/complex-data[@name='Value']/sub-value[@name='kCartridgeStateLowOnInk_65557']"/><sub-value name="kCartridgeStateLowOnInkIS_65698">
+						[supplies-range] _Filter(
+							(({supply}[].state bitand $kSupplyStateLowConditionMask ne 0
+								and {supply}[].substate _Contains $kSupplySubstateLowAcknowledge)
+							or
+								({supply}[].additionalInkLevelInfo _Contains $kSupplyAdditionalLevelInkAlertWithOverride
+								and {supply}[].additionalInkLevelInfo _Contains $kSupplyAdditionalLevelInkAlertWithOverrideAcknowledgement))
+							and [is-ink-subscription-enabled] eq @true
+							and not [is-low-on-ink-advertisement]
+							and not [is-low-on-ink-xmo2]
+						)
+					</sub-value><sub-value name="kCartridgeStateLowOnInkIS_65681" link="Data/StatusFormattingData.xml#/templates-container/device-status-formatting-template/values[@name='TemplateValues']/value[@name='supplies-info-set']/complex-data[@name='Value']/sub-value[@name='kCartridgeStateLowOnInkIS_65698']"/><sub-value name="kCartridgeStateLowOnInkIS_65682" link="Data/StatusFormattingData.xml#/templates-container/device-status-formatting-template/values[@name='TemplateValues']/value[@name='supplies-info-set']/complex-data[@name='Value']/sub-value[@name='kCartridgeStateLowOnInkIS_65698']"/><sub-value name="kCartridgeStateLowOnInkAdvertisement_65802">
+						[supplies-range] _Filter(
+							(({supply}[].state bitand $kSupplyStateLowConditionMask ne 0
+								and {supply}[].substate _Contains $kSupplySubstateLowAcknowledge)
+							or
+								({supply}[].additionalInkLevelInfo _Contains $kSupplyAdditionalLevelInkAlertWithOverride
+								and {supply}[].additionalInkLevelInfo _Contains $kSupplyAdditionalLevelInkAlertWithOverrideAcknowledgement))
+							and [is-low-on-ink-advertisement]
+						)
+					</sub-value><sub-value name="kCartridgeStateLowOnInkXMO2_65847">
+						[supplies-range] _Filter(
+							(({supply}[].state bitand $kSupplyStateLowConditionMask ne 0
+								and {supply}[].substate _Contains $kSupplySubstateLowAcknowledge)
+							or
+								({supply}[].additionalInkLevelInfo _Contains $kSupplyAdditionalLevelInkAlertWithOverride
+								and {supply}[].additionalInkLevelInfo _Contains $kSupplyAdditionalLevelInkAlertWithOverrideAcknowledgement))
+							and [is-low-on-ink-xmo2]
+						)
+					</sub-value><sub-value name="kCartridgeStateNonHPInstalled_65559">
+						[supplies-range] _Filter(
+							{supply}[].substate _Contains $kSupplySubstateNonHPInkInstalled
+							and
+								({supply}[].substate _Contains $kSupplySubstateNonHPInkInstalledAcknowledge
+								or {supply}[].substate _Contains $kSupplySubstateDriverNotAckOfPenSupplyInfo)
+							and [is-ink-subscription-enabled] eq @false
+						)
+					</sub-value><sub-value name="kCartridgeStateNonHPInstalledIS_65683">
+						[supplies-range] _Filter(
+							{supply}[].substate _Contains $kSupplySubstateNonHPInkInstalled
+							and
+								({supply}[].substate _Contains $kSupplySubstateNonHPInkInstalledAcknowledge
+								or {supply}[].substate _Contains $kSupplySubstateDriverNotAckOfPenSupplyInfo)
+							and [is-ink-subscription-enabled] eq @true
+						)
+					</sub-value><sub-value name="kCartridgeStateNotInstalled_65537">
+						([reserve-mode-supported])
+						then
+						(
+							[supplies-range] _Filter(
+								[supplies-count] eq [missing-supplies] _GetSize()
+								and [is-ink-subscription-enabled] eq @false
+							)
+						)
+						else
+						(
+							[supplies-range] _Filter(
+								{supply}[].state bitand $kSupplyStateMissingMask ne 0
+								and [is-ink-subscription-enabled] eq @false
+							)
+						)
+					</sub-value><sub-value name="kCartridgeStateNotInstalled_65589" link="Data/StatusFormattingData.xml#/templates-container/device-status-formatting-template/values[@name='TemplateValues']/value[@name='supplies-info-set']/complex-data[@name='Value']/sub-value[@name='kCartridgeStateNotInstalled_65537']"/><sub-value name="kCartridgeStateNotInstalledIS_65690">
+						([reserve-mode-supported])
+						then
+						(
+							[supplies-range] _Filter(
+								[supplies-count] eq [missing-supplies] _GetSize()
+								and [is-ink-subscription-enabled] eq @true
+							)
+						)
+						else
+						(
+							[supplies-range] _Filter(
+								{supply}[].state bitand $kSupplyStateMissingMask ne 0
+								and [is-ink-subscription-enabled] eq @true
+							)
+						)
+					</sub-value><sub-value name="kCartridgeStateNotInstalledIS_65769" link="Data/StatusFormattingData.xml#/templates-container/device-status-formatting-template/values[@name='TemplateValues']/value[@name='supplies-info-set']/complex-data[@name='Value']/sub-value[@name='kCartridgeStateNotInstalledIS_65690']"/><sub-value name="kCartridgeStateOutOfInk_65539">
+						[supplies-range] _Filter(
+							(({supply}[].state bitand $kSupplyStateOutConditionMask ne 0
+							and {supply}[].substate _Contains $kSupplySubstateOutAcknowledge)
+							or
+								({supply}[].additionalInkLevelInfo _Contains $kSupplyAdditionalLevelOOI
+								and {supply}[].additionalInkLevelInfo _Contains $kSupplyAdditionalLevelOOIAcknowledgement)
+							or
+								({supply}[].additionalInkLevelInfo _Contains $kSupplyAdditionalLevelOOIWithOverride
+								and {supply}[].additionalInkLevelInfo _Contains $kSupplyAdditionalLevelOOIWithOverrideAcknowledgement)
+							)
+							and {supply}[].subscriptionCapability ne $kSupplySubscriptionCapabilityInstantInk
+							and [is-ink-subscription-enabled] eq @false
+						)
+					</sub-value><sub-value name="kCartridgeStateOutOfInkIS_65674">
+						[supplies-range] _Filter(
+							(({supply}[].state bitand $kSupplyStateOutConditionMask ne 0
+							and {supply}[].substate _Contains $kSupplySubstateOutAcknowledge)
+							or
+								({supply}[].additionalInkLevelInfo _Contains $kSupplyAdditionalLevelOOI
+								and {supply}[].additionalInkLevelInfo _Contains $kSupplyAdditionalLevelOOIAcknowledgement)
+							or
+								({supply}[].additionalInkLevelInfo _Contains $kSupplyAdditionalLevelOOIWithOverride
+								and {supply}[].additionalInkLevelInfo _Contains $kSupplyAdditionalLevelOOIWithOverrideAcknowledgement)
+							)
+							and {supply}[].subscriptionCapability ne $kSupplySubscriptionCapabilityInstantInk
+							and [is-ink-subscription-enabled] eq @true
+						)
+					</sub-value><sub-value name="kCartridgeStateOutOfInkII2_65782">
+						[supplies-range] _Filter(
+							(({supply}[].state bitand $kSupplyStateOutConditionMask ne 0
+							and {supply}[].substate _Contains $kSupplySubstateOutAcknowledge)
+							or
+								({supply}[].additionalInkLevelInfo _Contains $kSupplyAdditionalLevelOOI
+								and {supply}[].additionalInkLevelInfo _Contains $kSupplyAdditionalLevelOOIAcknowledgement)
+							or
+								({supply}[].additionalInkLevelInfo _Contains $kSupplyAdditionalLevelOOIWithOverride
+								and {supply}[].additionalInkLevelInfo _Contains $kSupplyAdditionalLevelOOIWithOverrideAcknowledgement)
+							)
+							and {supply}[].subscriptionCapability eq $kSupplySubscriptionCapabilityInstantInk
+						)
+					</sub-value><sub-value name="kCartridgeStateReserveModeBlack_65604">
+						[supplies-range] _Filter(
+							_SupplyColor() eq "kPenColorK"
+							and [is-in-reserve-mode] eq @true
+							and (
+								{supply}[].substate _Contains $kSupplySubstateInReserveMode
+								or {supply}[].state bitand $kSupplyStateOutConditionMask ne 0
+								)
+							and {supply}[].substate _Contains $kSupplySubstateInReserveModeAcknowledge
+							and [supply-alert-descriptions] _Contains(_Dictionary("65604", "id", ({supply}[].color or {supply}[].expectedColor), "color"))
+							and {supply}[].subscriptionCapability ne $kSupplySubscriptionCapabilityInstantInk
+							and [is-ink-subscription-enabled] eq @false
+							)
+					</sub-value><sub-value name="kCartridgeStateReserveModeBlackIS_65692">
+						[supplies-range] _Filter(
+							_SupplyColor() eq "kPenColorK"
+							and [is-in-reserve-mode] eq @true
+							and (
+								{supply}[].substate _Contains $kSupplySubstateInReserveMode
+								or {supply}[].state bitand $kSupplyStateOutConditionMask ne 0
+								)
+							and {supply}[].substate _Contains $kSupplySubstateInReserveModeAcknowledge
+							and [supply-alert-descriptions] _Contains(_Dictionary("65692", "id", ({supply}[].color or {supply}[].expectedColor), "color"))
+							and {supply}[].subscriptionCapability ne $kSupplySubscriptionCapabilityInstantInk
+							and [is-ink-subscription-enabled] eq @true
+							)
+					</sub-value><sub-value name="kCartridgeStateReserveModeBlackII2_65784">
+						[supplies-range] _Filter(
+							_SupplyColor() eq "kPenColorK"
+							and [is-in-reserve-mode] eq @true
+							and (
+								{supply}[].substate _Contains $kSupplySubstateInReserveMode
+								or {supply}[].state bitand $kSupplyStateOutConditionMask ne 0
+								)
+							and {supply}[].substate _Contains $kSupplySubstateInReserveModeAcknowledge
+							and [supply-alert-descriptions] _Contains(_Dictionary("65784", "id", ({supply}[].color or {supply}[].expectedColor), "color"))
+							and {supply}[].subscriptionCapability eq $kSupplySubscriptionCapabilityInstantInk
+							)
+					</sub-value><sub-value name="kCartridgeStateReserveModeBlackMidJob_65619">
+						[supplies-range] _Filter(
+							_SupplyColor() eq "kPenColorK"
+							and [is-in-reserve-mode] eq @true
+							and (
+								{supply}[].substate _Contains $kSupplySubstateInReserveMode
+								or {supply}[].state bitand $kSupplyStateOutConditionMask ne 0
+								)
+							and {supply}[].substate _Contains $kSupplySubstateInReserveModeAcknowledge
+							and [supply-alert-descriptions] _Contains(_Dictionary("65619", "id", ({supply}[].color or {supply}[].expectedColor), "color"))
+							and {supply}[].subscriptionCapability ne $kSupplySubscriptionCapabilityInstantInk
+							and [is-ink-subscription-enabled] eq @false
+							)
+					</sub-value><sub-value name="kCartridgeStateReserveModeBlackMidJobIS_65697">
+						[supplies-range] _Filter(
+							_SupplyColor() eq "kPenColorK"
+							and [is-in-reserve-mode] eq @true
+							and (
+								{supply}[].substate _Contains $kSupplySubstateInReserveMode
+								or {supply}[].state bitand $kSupplyStateOutConditionMask ne 0
+								)
+							and {supply}[].substate _Contains $kSupplySubstateInReserveModeAcknowledge
+							and [supply-alert-descriptions] _Contains(_Dictionary("65697", "id", ({supply}[].color or {supply}[].expectedColor), "color"))
+							and {supply}[].subscriptionCapability ne $kSupplySubscriptionCapabilityInstantInk
+							and [is-ink-subscription-enabled] eq @true
+							)
+					</sub-value><sub-value name="kCartridgeStateReserveModeBlackMidJobII2_65786">
+						[supplies-range] _Filter(
+							_SupplyColor() eq "kPenColorK"
+							and [is-in-reserve-mode] eq @true
+							and (
+								{supply}[].substate _Contains $kSupplySubstateInReserveMode
+								or {supply}[].state bitand $kSupplyStateOutConditionMask ne 0
+								)
+							and {supply}[].substate _Contains $kSupplySubstateInReserveModeAcknowledge
+							and [supply-alert-descriptions] _Contains(_Dictionary("65786", "id", ({supply}[].color or {supply}[].expectedColor), "color"))
+							and {supply}[].subscriptionCapability eq $kSupplySubscriptionCapabilityInstantInk
+							)
+					</sub-value><sub-value name="kCartridgeStateReserveModeColor_65603">
+						[supplies-range] _Filter(
+							_SupplyColor() ne "kPenColorK"
+							and [is-in-reserve-mode] eq @true
+							and (
+								{supply}[].substate _Contains $kSupplySubstateInReserveMode
+								or {supply}[].state bitand $kSupplyStateOutConditionMask ne 0
+								)
+							and {supply}[].substate _Contains $kSupplySubstateInReserveModeAcknowledge
+							and [supply-alert-descriptions] _Contains(_Dictionary("65603", "id", ({supply}[].color or {supply}[].expectedColor), "color"))
+							and {supply}[].subscriptionCapability ne $kSupplySubscriptionCapabilityInstantInk
+							and [is-ink-subscription-enabled] eq @false
+							)
+					</sub-value><sub-value name="kCartridgeStateReserveModeColorIS_65691">
+						[supplies-range] _Filter(
+							_SupplyColor() ne "kPenColorK"
+							and [is-in-reserve-mode] eq @true
+							and (
+								{supply}[].substate _Contains $kSupplySubstateInReserveMode
+								or {supply}[].state bitand $kSupplyStateOutConditionMask ne 0
+								)
+							and {supply}[].substate _Contains $kSupplySubstateInReserveModeAcknowledge
+							and [supply-alert-descriptions] _Contains(_Dictionary("65691", "id", ({supply}[].color or {supply}[].expectedColor), "color"))
+							and {supply}[].subscriptionCapability ne $kSupplySubscriptionCapabilityInstantInk
+							and [is-ink-subscription-enabled] eq @true
+							)
+					</sub-value><sub-value name="kCartridgeStateReserveModeColorII2_65783">
+						[supplies-range] _Filter(
+							_SupplyColor() ne "kPenColorK"
+							and [is-in-reserve-mode] eq @true
+							and (
+								{supply}[].substate _Contains $kSupplySubstateInReserveMode
+								or {supply}[].state bitand $kSupplyStateOutConditionMask ne 0
+								)
+							and {supply}[].substate _Contains $kSupplySubstateInReserveModeAcknowledge
+							and [supply-alert-descriptions] _Contains(_Dictionary("65783", "id", ({supply}[].color or {supply}[].expectedColor), "color"))
+							and {supply}[].subscriptionCapability eq $kSupplySubscriptionCapabilityInstantInk
+							)
+					</sub-value><sub-value name="kCartridgeStateReserveModeColorMidJob_65618">
+						[supplies-range] _Filter(
+							_SupplyColor() ne "kPenColorK"
+							and [is-in-reserve-mode] eq @true
+							and (
+								{supply}[].substate _Contains $kSupplySubstateInReserveMode
+								or {supply}[].state bitand $kSupplyStateOutConditionMask ne 0
+								)
+							and {supply}[].substate _Contains $kSupplySubstateInReserveModeAcknowledge
+							and [supply-alert-descriptions] _Contains(_Dictionary("65618", "id", ({supply}[].color or {supply}[].expectedColor), "color"))
+							and {supply}[].subscriptionCapability ne $kSupplySubscriptionCapabilityInstantInk
+							and [is-ink-subscription-enabled] eq @false
+							)
+					</sub-value><sub-value name="kCartridgeStateReserveModeColorMidJobIS_65696">
+						[supplies-range] _Filter(
+							_SupplyColor() ne "kPenColorK"
+							and [is-in-reserve-mode] eq @true
+							and (
+								{supply}[].substate _Contains $kSupplySubstateInReserveMode
+								or {supply}[].state bitand $kSupplyStateOutConditionMask ne 0
+								)
+							and {supply}[].substate _Contains $kSupplySubstateInReserveModeAcknowledge
+							and [supply-alert-descriptions] _Contains(_Dictionary("65696", "id", ({supply}[].color or {supply}[].expectedColor), "color"))
+							and {supply}[].subscriptionCapability ne $kSupplySubscriptionCapabilityInstantInk
+							and [is-ink-subscription-enabled] eq @true
+							)
+					</sub-value><sub-value name="kCartridgeStateReserveModeColorMidJobII2_65785">
+						[supplies-range] _Filter(
+							_SupplyColor() ne "kPenColorK"
+							and [is-in-reserve-mode] eq @true
+							and (
+								{supply}[].substate _Contains $kSupplySubstateInReserveMode
+								or {supply}[].state bitand $kSupplyStateOutConditionMask ne 0
+								)
+							and {supply}[].substate _Contains $kSupplySubstateInReserveModeAcknowledge
+							and [supply-alert-descriptions] _Contains(_Dictionary("65785", "id", ({supply}[].color or {supply}[].expectedColor), "color"))
+							and {supply}[].subscriptionCapability eq $kSupplySubscriptionCapabilityInstantInk
+							)
+					</sub-value><sub-value name="kCartridgeStateReserveModeNotInstalled_65553">
+						[supplies-range] _Filter(
+							{supply}[].state bitand $kSupplyStateMissingMask ne 0
+							and [is-in-reserve-mode] eq @true
+							and [is-ink-subscription-enabled] eq @false
+						)
+					</sub-value><sub-value name="kCartridgeStateReserveModeNotInstalledIS_65771">
+						[supplies-range] _Filter(
+							{supply}[].state bitand $kSupplyStateMissingMask ne 0
+							and [is-in-reserve-mode] eq @true
+							and [is-ink-subscription-enabled] eq @true
+						)
+					</sub-value><sub-value name="kCartridgeStateSEHOAtInsertion_65613">
+						[supplies-range] _Filter(
+							{supply}[].substate _Contains $kSupplySubstateSEHOAtInsertion
+							and [is-ink-subscription-enabled] eq @false
+						)
+					</sub-value><sub-value name="kCartridgeStateSEHOAtInsertionIS_65695">
+						[supplies-range] _Filter(
+							{supply}[].substate _Contains $kSupplySubstateSEHOAtInsertion
+							and [is-ink-subscription-enabled] eq @true
+						)
+					</sub-value><sub-value name="kCartridgeStateSETUPUpgradeFailed_65671">
+						[supplies-range] _Filter(
+							{supply}[].substate _Contains $kSupplySubstateOOBESecureUpgradeFailed
+							and [DMF-device-states] _Contains("kSetupSupplyUpgradeFailedState")
+							and [is-ink-subscription-enabled] eq @false
+						)
+					</sub-value><sub-value name="kCartridgeStateSETUPUpgradeFailed_Support_65671" link="Data/StatusFormattingData.xml#/templates-container/device-status-formatting-template/values[@name='TemplateValues']/value[@name='supplies-info-set']/complex-data[@name='Value']/sub-value[@name='kCartridgeStateSETUPUpgradeFailed_65671']"/><sub-value name="kCartridgeStateSETUPUpgradeFailedIS_65699">
+						[supplies-range] _Filter(
+							{supply}[].substate _Contains $kSupplySubstateOOBESecureUpgradeFailed
+							and [DMF-device-states] _Contains("kSetupSupplyUpgradeFailedState")
+							and [is-ink-subscription-enabled] eq @true
+						)
+					</sub-value><sub-value name="kCartridgeStateShaidCalibrationCounterFailure_65611">
+						[supplies-range] _Filter(
+							[DMF-device-states] _Contains("kSHAIDCalibrationCounterFailureState")
+							and {supply}[].substate _Contains $kSupplySubstateSHAIDCalibrationCounterFailure
+							and [is-ink-subscription-enabled] eq @false
+						)
+					</sub-value><sub-value name="kCartridgeStateShaidCalibrationCounterFailureIS_65693">
+						[supplies-range] _Filter(
+							[DMF-device-states] _Contains("kSHAIDCalibrationCounterFailureState")
+							and {supply}[].substate _Contains $kSupplySubstateSHAIDCalibrationCounterFailure
+							and [is-ink-subscription-enabled] eq @true
+						)
+					</sub-value><sub-value name="kCartridgeStateShaidElectricalFailure_65610">
+						[supplies-range] _Filter(
+							[DMF-device-states] _Contains("kSHAIDElectricalFailureState")
+							and {supply}[].substate _Contains $kSupplySubstateSHAIDElectricalFailure
+							and [is-ink-subscription-enabled] eq @false
+						)
+					</sub-value><sub-value name="kCartridgeStateShaidElectricalFailureIS_65736">
+						[supplies-range] _Filter(
+							[DMF-device-states] _Contains("kSHAIDElectricalFailureState")
+							and {supply}[].substate _Contains $kSupplySubstateSHAIDElectricalFailure
+							and [is-ink-subscription-enabled] eq @true
+						)
+					</sub-value><sub-value name="kCartridgeStateSubscriptionConsumableNeedsEnrollmentII2_65765">
+						[supplies-range] _Filter(
+							{supply}[].substate _Contains $kSupplySubstateSubscriptionConsumableNeedsEnrollment
+							and [supply-alert-descriptions] _Contains(_Dictionary("65765", "id", ({supply}[].color or {supply}[].expectedColor), "color"))
+						)
+					</sub-value><sub-value name="kCartridgeStateSubscriptionConsumableTemporaryUsageAllowedII2_65772">
+						[supplies-range] _Filter(
+							{supply}[].substate _Contains $kSupplySubstateSubscriptionConsumableTemporaryUsageAllowed
+							and [supply-alert-descriptions] _Contains(_Dictionary("65772", "id", ({supply}[].color or {supply}[].expectedColor), "color"))
+						)
+					</sub-value><sub-value name="kCartridgeStateSubscriptionConsumableTemporaryUsageAllowedII2_65808">
+						[supplies-range] _Filter(
+							{supply}[].substate _Contains $kSupplySubstateSubscriptionConsumableTemporaryUsageAllowed
+							and [supply-alert-descriptions] _Contains(_Dictionary("65808", "id", ({supply}[].color or {supply}[].expectedColor), "color"))
+						)
+					</sub-value><sub-value name="kCartridgeStateUpgradeDetected_65549">
+						[supplies-range] _Filter(
+							{supply}[].substate _Contains $kSupplySubstateUpgradeDetected
+							and [printer-state] eq "kPenFailureState"
+							and [is-ink-subscription-enabled] eq @false
+						)
+					</sub-value><sub-value name="kCartridgeStateUpgradeDetectedIS_65677">
+						[supplies-range] _Filter(
+							{supply}[].substate _Contains $kSupplySubstateUpgradeDetected
+							and [printer-state] eq "kPenFailureState"
+							and [is-ink-subscription-enabled] eq @true
+						)
+					</sub-value><sub-value name="kCartridgeStateUpgradeFailed_65551">
+						[supplies-range] _Filter(
+							{supply}[].substate _Contains $kSupplySubstateUpgradeFailed
+							and [DMF-device-states] _Contains("kSupplyUpgradeFailedState")
+							and [is-ink-subscription-enabled] eq @false
+						)
+					</sub-value><sub-value name="kCartridgeStateUpgradeFailedIS_65679">
+						[supplies-range] _Filter(
+							{supply}[].substate _Contains $kSupplySubstateUpgradeFailed
+							and [DMF-device-states] _Contains("kSupplyUpgradeFailedState")
+							and [is-ink-subscription-enabled] eq @true
+						)
+					</sub-value><sub-value name="kCartridgeStateUpgradeSuccess_65550">
+						[supplies-range] _Filter(
+							{supply}[].substate _Contains $kSupplySubstateUpgradeSuccess
+							and [is-ink-subscription-enabled] eq @false
+						)
+					</sub-value><sub-value name="kCartridgeStateUpgradeSuccessIS_65678">
+						[supplies-range] _Filter(
+							{supply}[].substate _Contains $kSupplySubstateUpgradeSuccess
+							and [is-ink-subscription-enabled] eq @true
+						)
+					</sub-value><sub-value name="kCartridgeStateVeryLowOnInk_65546">
+						[supplies-range] _Filter(
+							(
+								({supply}[].state bitand $kSupplyStateVeryLowConditionMask ne 0
+								and {supply}[].substate _Contains $kSupplySubstateVeryLowAcknowledge)
+							or
+								({supply}[].additionalInkLevelInfo _Contains $kSupplyAdditionalLevelVLOI
+								and {supply}[].additionalInkLevelInfo _Contains $kSupplyAdditionalLevelVLOIAcknowledgement)
+							)
+							and {supply}[].subscriptionCapability ne $kSupplySubscriptionCapabilityInstantInk
+							and [is-ink-subscription-enabled] eq @false
+							and not [is-very-low-on-ink-xmo2]
+						)
+					</sub-value><sub-value name="kCartridgeStateVeryLowOnInk_OKResume_65546" link="Data/StatusFormattingData.xml#/templates-container/device-status-formatting-template/values[@name='TemplateValues']/value[@name='supplies-info-set']/complex-data[@name='Value']/sub-value[@name='kCartridgeStateVeryLowOnInk_65546']"/><sub-value name="kCartridgeStateVeryLowOnInkIS_65776">
+						[supplies-range] _Filter(
+							(
+								({supply}[].state bitand $kSupplyStateVeryLowConditionMask ne 0
+								and {supply}[].substate _Contains $kSupplySubstateVeryLowAcknowledge)
+							or
+								({supply}[].additionalInkLevelInfo _Contains $kSupplyAdditionalLevelVLOI
+								and {supply}[].additionalInkLevelInfo _Contains $kSupplyAdditionalLevelVLOIAcknowledgement)
+							)
+							and {supply}[].subscriptionCapability ne $kSupplySubscriptionCapabilityInstantInk
+							and [is-ink-subscription-enabled] eq @true
+							and not [is-very-low-on-ink-xmo2]
+						)
+					</sub-value><sub-value name="kCartridgeStateVeryLowOnInkIS_OKResume_65776" link="Data/StatusFormattingData.xml#/templates-container/device-status-formatting-template/values[@name='TemplateValues']/value[@name='supplies-info-set']/complex-data[@name='Value']/sub-value[@name='kCartridgeStateVeryLowOnInkIS_65776']"/><sub-value name="kCartridgeStateVeryLowOnInkII2_65764">
+						[supplies-range] _Filter(
+							(
+								({supply}[].state bitand $kSupplyStateVeryLowConditionMask ne 0
+								and {supply}[].substate _Contains $kSupplySubstateVeryLowAcknowledge)
+							or
+								({supply}[].additionalInkLevelInfo _Contains $kSupplyAdditionalLevelVLOI
+								and {supply}[].additionalInkLevelInfo _Contains $kSupplyAdditionalLevelVLOIAcknowledgement)
+							)
+							and {supply}[].subscriptionCapability eq $kSupplySubscriptionCapabilityInstantInk
+							and not [is-very-low-on-ink-xmo2]
+						)
+					</sub-value><sub-value name="kCartridgeStateVeryLowOnInkII2_K23_65764" link="Data/StatusFormattingData.xml#/templates-container/device-status-formatting-template/values[@name='TemplateValues']/value[@name='supplies-info-set']/complex-data[@name='Value']/sub-value[@name='kCartridgeStateVeryLowOnInkII2_65764']"/><sub-value name="kCartridgeStateVeryLowOnInkXMO2_65848">
+						[supplies-range] _Filter(
+							(
+								({supply}[].state bitand $kSupplyStateVeryLowConditionMask ne 0
+								and {supply}[].substate _Contains $kSupplySubstateVeryLowAcknowledge)
+							or
+								({supply}[].additionalInkLevelInfo _Contains $kSupplyAdditionalLevelVLOI
+								and {supply}[].additionalInkLevelInfo _Contains $kSupplyAdditionalLevelVLOIAcknowledgement)
+							)
+							and [is-very-low-on-ink-xmo2]
+						)
+					</sub-value><sub-value name="kCartridgeStateWrongHostID_65591">
+						[supplies-range] _Filter(
+							{supply}[].substate _Contains $kSupplySubstateWrongHost
+							and [is-ink-subscription-enabled] eq @false
+						)
+					</sub-value><sub-value name="kCartridgeStateWrongHostIDIS_65688">
+						[supplies-range] _Filter(
+							{supply}[].substate _Contains $kSupplySubstateWrongHost
+							and [is-ink-subscription-enabled] eq @true
+						)
+					</sub-value><sub-value name="kCartridgeStateWrongPart_65599">
+						[supplies-range] _Filter(
+							[DMF-device-states] _Contains("kStartupRoutineFailedState")
+							and {supply}[].state bitand ($kSupplyStateIncorrectlyInstalledMask bitor $kSupplyStateIncorrectMask) ne 0
+						)
+					</sub-value><sub-value name="kCartridgeStateWrongPart_Support_65599" link="Data/StatusFormattingData.xml#/templates-container/device-status-formatting-template/values[@name='TemplateValues']/value[@name='supplies-info-set']/complex-data[@name='Value']/sub-value[@name='kCartridgeStateWrongPart_65599']"/><sub-value name="kCartridgeStateWrongSlot_65544">
+						[supplies-range] _Filter(
+							{supply}[].substate _Contains $kSupplySubstateWrongSlot
+						)
+					</sub-value><sub-value name="kCartridgeStateWrongTrade_65590">
+						[supplies-range] _Filter(
+							{supply}[].substate _Contains $kSupplySubstateWrongTrade
+						)
+					</sub-value><sub-value name="kCartridgeStateHPSuppliesForAnotherPrinter_65794">
+						[supplies-range] _Filter(
+							{supply}[].substate _Contains $kSupplySubstateConsumableForAnotherPrinter
+							and [supply-alert-descriptions-with-acknowledge] _Contains(_Dictionary("65794", "id", ({supply}[].color or {supply}[].expectedColor), "color"))
+						)
+					</sub-value><sub-value name="kCartridgeStateInSafeStopMode_65939">
+						[supplies-range] _Filter(
+							[DMF-device-states] _Contains("kInSafeStopModeState")
+							and [supply-alert-descriptions] _Contains(_Dictionary("65939", "id", ({supply}[].color or {supply}[].expectedColor), "color"))
+						)
+					</sub-value><sub-value name="kCartridgeStateSHAIDOOITooEarlyFailure_65800">
+						[supplies-range] _Filter(
+							[DMF-device-states] _Contains("kSHAIDOOITooEarlyFailureState")
+							and [supply-alert-descriptions] _Contains(_Dictionary("65800", "id", ({supply}[].color or {supply}[].expectedColor), "color"))
+						)
+					</sub-value><sub-value name="kCartridgeStateSHAIDOOITooEarlyFailure_Support_65800">
+						[supplies-range] _Filter(
+							[DMF-device-states] _Contains("kSHAIDOOITooEarlyFailureState")
+							and [supply-alert-descriptions] _Contains(_Dictionary("65800", "id", ({supply}[].color or {supply}[].expectedColor), "color"))
+						)
+					</sub-value><sub-value name="kCartridgeStateRejected2ndCartridgeXMO2_65846">
+						[supplies-range] _Filter(
+							{supply}[].substate _Contains $kSupplySubstateTrialConsumableRejected
+						)
+					</sub-value><sub-value name="kCartridgeStateUseNewForStartup_65904">
+						[supplies-range] _Filter(
+							[DMF-device-states] _Contains("kUseNewForStartupState")
+							and [supply-alert-descriptions] _Contains(_Dictionary("65904", "id", ({supply}[].color or {supply}[].expectedColor), "color"))
+						)
+					</sub-value><sub-value name="kCartridgeStateAlteredUsedForStartup_65859">
+						[supplies-range] _Filter(
+							[DMF-device-states] _Contains("kUseNewForStartupState")
+							and [supply-alert-descriptions-with-acknowledge] _Contains(_Dictionary("65859", "id", ({supply}[].color or {supply}[].expectedColor), "color"))
+						)
+					</sub-value><sub-value name="kCartridgeStateUnauthorizedCartridge_65926">
+						[supplies-range] _Filter(
+							[DMF-device-states] _Contains("kUnauthorizedSupplyState")
+							and [supply-alert-descriptions] _Contains(_Dictionary("65926", "id", ({supply}[].color or {supply}[].expectedColor), "color"))
+						)
+					</sub-value><sub-value name="kCartridgeStateIICartridgePreOOBECompletion_65933">
+						[supplies-range] _Filter(
+							{supply}[].substate _Contains $kSupplySubstateSubscriptionConsumableTemporaryUsageAllowed
+							and [supply-alert-descriptions] _Contains(_Dictionary("65933", "id", ({supply}[].color or {supply}[].expectedColor), "color"))
+						)
+					</sub-value><sub-value name="kCartridgeStateIICartridgePreOOBECompletion_65934">
+						[supplies-range] _Filter(
+							{supply}[].substate _Contains $kSupplySubstateSubscriptionConsumableTemporaryUsageAllowed
+							and [supply-alert-descriptions] _Contains(_Dictionary("65934", "id", ({supply}[].color or {supply}[].expectedColor), "color"))
+						)
+					</sub-value><sub-value name="kCartridgeStateIncompatibleAfterOOBE_65965">
+						[supplies-range] _Filter(
+							{supply}[].substate _Contains $kSupplySubstateSubscriptionConsumableNeedsEnrollment
+							and [supply-alert-descriptions] _Contains(_Dictionary("65965", "id", ({supply}[].color or {supply}[].expectedColor), "color"))
+						)
+					</sub-value><sub-value name="kCartridgeStateIncompatibleAfterOOBE_65966">
+						[supplies-range] _Filter(
+							{supply}[].substate _Contains $kSupplySubstateSubscriptionConsumableNeedsEnrollment
+							and [supply-alert-descriptions] _Contains(_Dictionary("65966", "id", ({supply}[].color or {supply}[].expectedColor), "color"))
+						)
+					</sub-value></complex-data></value><value name="sorted-supported-pen-states" ServiceName="ServiceMethodsContainer"><data name="Value">
+					@sortedSupportedPenStates
+				</data></value><value name="sorted-supported-supplies-states" ServiceName="ServiceMethodsContainer"><data name="Value">
+					@sortedSupportedSupplyStates
+				</data></value><value name="prioritized-pen-error" ServiceName="DMFSuppliesStatus"><data name="Value">
+					_Aggregate([sorted-supported-pen-states], @initial + _MakePenStatus(@element), _Array()) _GetItem(0)
+				</data></value><value name="prioritized-supplies-error" ServiceName="DMFSuppliesStatus"><data name="Value">
+					_Aggregate([sorted-supported-supplies-states], @initial + _MakeSupplyStatus(@element), _Array()) _GetItem(0)
+				</data></value><value name="pens-range" ServiceName="DMFSuppliesStatus"><data name="Value">
+					{suppliesIdentifiers} _Filter(
+						{supply}[].type eq $kSupplyTypePrinthead )
+				</data></value><value name="pens-count"><data name="Value">[pens-range] _GetSize()</data></value><value name="pens-info-set" ServiceName="DMFSuppliesStatus"><complex-data name="Value"><sub-value name="kCartridgeStateNotInstalled_65536">
+						[pens-range] _Filter(
+							{supply}[].state bitand $kSupplyStateIncompatible ne 0
+							or {supply}[].state bitand $kSupplyStateIncorrectMask ne 0
+							or {supply}[].state bitand $kSupplyStateFailureMask ne 0
+							or {supply}[].state bitand $kSupplyStateMissingMask ne 0
+						)
+					</sub-value><sub-value name="kCartridgeStateBad_65719">
+						[pens-range] _Filter(
+							{supply}[].state bitand $kSupplyStateFailureMask ne 0)
+					</sub-value></complex-data></value><value name="cartridge-status" ServiceName="DMFSuppliesStatus"><data name="Value">
+					[prioritized-pen-error] or
+					[prioritized-supplies-error] or
+					@nil
+				</data></value><value name="duplexer-present" ServiceName="DMFDeviceStatus"><data name="Value">@isDuplexerInstalled eq 1</data></value><value name="drop-volumes" ServiceName="DMFSuppliesStatus"><data name="Value">_Aggregate([installed-supplies-range],
+					@initial + ({supply}[].dropVolume, _SupplyColor()), _Dictionary())</data></value><value name="everyday-statuses" ServiceName="DMFSuppliesStatus"><data name="Value">_Aggregate([installed-supplies-range],
+					@initial + (@supplyEverydayStatusForIdentifier:, _SupplyColor()), _Dictionary())</data></value><value name="supplies-warranty-info" ServiceName="DMFSuppliesStatus"><data name="Value">
+					{warrantyValue}
+				</data></value><value name="is-rely-on-status-priority-only"><data name="Value">1</data></value><value name="scanner-status" ServiceName="DMFDeviceStatus"><data name="Value">
+					(@scannerState _Contains $kDMADFScannerFeederJam or @scannerState _Contains $kDMScannerFeederJamOrDirty)
+					then
+						"kADFPaperJamState_65621"
+					else (@scannerState _Contains $kDMScannerMispick)
+					then
+						"kADFCannotPickState_65747"
+					else
+						@nil
+				</data></value><value name="supplies-reserve-mode-acknowledge" ServiceName="DMFSuppliesStateAcknowledgment"><data name="Value">_Aggregate([installed-supplies-range],
+					@initial + (_CallMethod(_Service([DMSuppliesStateAcknowledgment]),
+						"availableActionsForState:identifier:error:", "inReserveMode", @element, @nil), @element), _Dictionary())
+				</data></value><value name="supplies-support-messages" ServiceName="DMFSuppliesSupportMessagesManagement"><data name="Value">_Aggregate([installed-supplies-range],
+					@initial + (_CallMethod(_Service([DMSuppliesSupportMessagesManagement]),
+						"supportMessagesForIdentifier:error:", @element, @nil), @element), _Dictionary())
+				</data></value><value name="is-ink-subscription-enabled" ServiceName="DMFDeviceFeatureSettings"><data name="Value">
+					({kDMInkSubscriptionFeature}[isEnabled] ne @nil)
+					then {kDMInkSubscriptionFeature}[isEnabled]
+					else @false
+				</data></value><value name="subscribed-pages-account-problems" ServiceName="DMFAlertsStatus"><data name="Value">
+					_Aggregate({alertIdentifiers} _Filter(_CallMethod({alert}[].details, "subscriptionError") eq "accountProblem"),
+								@initial + {alert}[].type, _Array())
+				</data></value><value name="is-subscription-important-message-error" ServiceName="DMFAlertsStatus"><data name="Value">
+					_Aggregate({alertIdentifiers} _Filter({alert}[].type eq "subscriptionImportantMessageAvailable"),
+								@initial + {alert}[].localizationID, _Array()) _Contains("65743")
+				</data></value><value name="is-counterfeit-at-insertion" ServiceName="DMFAlertsStatus"><data name="Value">
+					_Aggregate({alertIdentifiers} _Filter({alert}[].type eq "cartridgeAlteredNotEnabled"),
+								@initial + {alert}[].localizationID, _Array()) _Contains("65790")
+				</data></value><value name="is-tray-empty" ServiceName="DMFAlertsStatus"><data name="Value">
+					_Aggregate({alertIdentifiers} _Filter({alert}[].type eq "trayEmpty"),
+								@initial + {alert}[].localizationID, _Array()) _Contains("65803")
+					and not _Aggregate({alertIdentifiers} _Filter({alert}[].type eq "trayEmptyOrOpen"),
+								@initial + {alert}[].localizationID, _Array()) _Contains("65583")
+				</data></value><value name="is-depleted-pay-for-print" ServiceName="DMFAlertsStatus"><data name="Value">
+					_Aggregate({alertIdentifiers} _Filter({alert}[].type eq "cartridgeRefilled"),
+								@initial + {alert}[].localizationID, _Array()) _Contains("65841")
+				</data></value><value name="is-paper-length-mismatch-65809" ServiceName="DMFAlertsStatus"><data name="Value">
+					_Aggregate({alertIdentifiers} _Filter({alert}[].type eq "sizeMismatchInTray"),
+								@initial + {alert}[].localizationID, _Array()) _Contains("65809")
+				</data></value><value name="is-paper-length-mismatch-65810" ServiceName="DMFAlertsStatus"><data name="Value">
+					_Aggregate({alertIdentifiers} _Filter({alert}[].type eq "sizeMismatchInTray"),
+								@initial + {alert}[].localizationID, _Array()) _Contains("65810")
+				</data></value><value name="is-media-size-mismatch-65573" ServiceName="DMFAlertsStatus"><data name="Value">
+					_Aggregate({alertIdentifiers} _Filter({alert}[].type eq "sizeMismatchInTray"),
+								@initial + {alert}[].localizationID, _Array()) _Contains("65573")
+				</data></value><value name="is-media-size-mismatch-65701" ServiceName="DMFAlertsStatus"><data name="Value">
+					_Aggregate({alertIdentifiers} _Filter({alert}[].type eq "sizeMismatchInTray"),
+								@initial + {alert}[].localizationID, _Array()) _Contains("65701")
+				</data></value><value name="is-low-on-ink-advertisement" ServiceName="DMFAlertsStatus"><data name="Value">
+					_Aggregate({alertIdentifiers} _Filter({alert}[].type eq "cartridgeLow"),
+								@initial + {alert}[].localizationID, _Array()) _Contains("65802")
+				</data></value><value name="is-low-on-ink-xmo2" ServiceName="DMFAlertsStatus"><data name="Value">
+					_Aggregate({alertIdentifiers} _Filter({alert}[].type eq "cartridgeLow"),
+								@initial + {alert}[].localizationID, _Array()) _Contains("65847")
+				</data></value><value name="is-very-low-on-ink-xmo2" ServiceName="DMFAlertsStatus"><data name="Value">
+					_Aggregate({alertIdentifiers} _Filter({alert}[].type eq "cartridgeVeryLow"),
+								@initial + {alert}[].localizationID, _Array()) _Contains("65848")
+				</data></value><value name="is-subscription-cancelled-xmo2" ServiceName="DMFAlertsStatus"><data name="Value">
+					_Aggregate({alertIdentifiers} _Filter({alert}[].type eq "subscriptionCancellationSuccessful"),
+								@initial + {alert}[].localizationID, _Array()) _Contains("65850")
+				</data></value><value name="is-subscription-successful-xmo2" ServiceName="DMFAlertsStatus"><data name="Value">
+					_Aggregate({alertIdentifiers} _Filter({alert}[].type eq "subscriptionSuccessful"),
+								@initial + {alert}[].localizationID, _Array()) _Contains("65845")
+				</data></value><value name="supply-alert-descriptions" ServiceName="DMFAlertsStatus"><data name="Value">
+					_Aggregate({alertIdentifiers},
+						@initial + _Dictionary(
+							{alert}[].localizationID, "id",
+							_CallMethod({alert}[].details, "supplyColorName"), "color"
+							), _Array())
+				</data></value><value name="supply-alert-descriptions-with-acknowledge" ServiceName="DMFAlertsStatus"><data name="Value">
+					_Aggregate({alertIdentifiers} _Filter(
+						(_CallMethod(_Service([DMFAlertsStatus]), "alertUserActionForIdentifier:", @element) eq @nil)
+						or (_CallMethod(_Service([DMFAlertsStatus]), "alertUserActionForIdentifier:", @element) ne $kDMDeviceAlertUserActionAcknowledgeConsumableState)
+						), @initial + _Dictionary(
+							{alert}[].localizationID, "id",
+							_CallMethod({alert}[].details, "supplyColorName"), "color"
+							), _Array())
+				</data></value><value name="is-palermo-tray-empty" ServiceName="DMFAlertsStatus"><data name="Value">
+					_Aggregate({alertIdentifiers} _Filter({alert}[].type eq "trayEmpty"),
+					@initial + {alert}[].localizationID, _Array()) _Contains("65921")
+				</data></value><value name="is-paper-multi-pick-during-autoduplex" ServiceName="DMFAlertsStatus"><data name="Value">
+					_Aggregate({alertIdentifiers} _Filter({alert}[].type eq "mediaTooLongToAutoDuplex"),
+					@initial + {alert}[].localizationID, _Array()) _Contains("65909")
+				</data></value><value name="is-verona-too-long-to-autoduplex" ServiceName="DMFAlertsStatus"><data name="Value">
+					_Aggregate({alertIdentifiers} _Filter({alert}[].type eq "mediaTooLongToAutoDuplex"),
+					@initial + {alert}[].localizationID, _Array()) _Contains("65910")
+				</data></value><value name="is-alignment-failed" ServiceName="DMFAlertsStatus"><data name="Value">
+					_Aggregate({alertIdentifiers}, @initial + {alert}[].localizationID, _Array()) _Contains("65914")
+				</data></value><value name="is-alignment-finished" ServiceName="DMFAlertsStatus"><data name="Value">
+					_Aggregate({alertIdentifiers}, @initial + {alert}[].localizationID, _Array()) _Contains("65915")
+				</data></value></values></device-status-formatting-template></templates-container>
